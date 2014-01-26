@@ -1,0 +1,942 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABDIS	drivers/can/can_at91sam7a1.h	81;"	d
+ABEN	drivers/can/can_at91sam7a1.h	80;"	d
+ABM	drivers/can/can_at91sam7a3.h	66;"	d
+ABRQ	drivers/can/can_at91sam7a1.h	99;"	d
+ACK	drivers/can/can_at91sam7a1.h	134;"	d
+ACR	drivers/can/can_at91sam7a3.h	/^   uint32_t  ACR;					\/* Abort Command Register		   	*\/$/;"	m	struct:__anon27
+AERR	drivers/can/can_at91sam7a3.h	100;"	d
+AF_CAN	drivers/can/can_socketcan.c	62;"	d	file:
+BD	drivers/can/can_at91sam7a1.h	86;"	d
+BERR	drivers/can/can_at91sam7a3.h	102;"	d
+BOFF	drivers/can/can_at91sam7a3.h	93;"	d
+BR	drivers/can/can_at91sam7a3.h	/^   uint32_t  BR;			 		\/* Baudrate Register					*\/$/;"	m	struct:__anon27
+BRP	drivers/can/can_at91sam7a3.h	112;"	d
+BUF_FREE	interfaces/csp_if_can.c	/^	BUF_FREE = 0,					\/**< Buffer element free *\/$/;"	e	enum:__anon1	file:
+BUF_USED	interfaces/csp_if_can.c	/^	BUF_USED = 1,					\/**< Buffer element used *\/$/;"	e	enum:__anon1	file:
+BUS	drivers/can/can_at91sam7a1.h	138;"	d
+BUSOFF	drivers/can/can_at91sam7a1.h	98;"	d
+CAN	drivers/can/can_at91sam7a1.h	74;"	d
+CAN0_BASE_ADDRESS	drivers/can/can_at91sam7a3.h	31;"	d
+CAN1_BASE_ADDRESS	drivers/can/can_at91sam7a3.h	32;"	d
+CANDIS	drivers/can/can_at91sam7a1.h	79;"	d
+CANEN	drivers/can/can_at91sam7a1.h	78;"	d
+CANEN	drivers/can/can_at91sam7a3.h	64;"	d
+CANENA	drivers/can/can_at91sam7a1.h	94;"	d
+CANINIT	drivers/can/can_at91sam7a1.h	95;"	d
+CAN_BASE_ADDRESS	drivers/can/can_at91sam7a1.h	31;"	d
+CAN_CLEAR_DLC	drivers/can/can_at90can128.h	104;"	d
+CAN_CLEAR_GENINT	drivers/can/can_at90can128.h	88;"	d
+CAN_CLEAR_IDE	drivers/can/can_at90can128.h	105;"	d
+CAN_CLEAR_IDEMSK	drivers/can/can_at90can128.h	144;"	d
+CAN_CLEAR_INTERRUPT	drivers/can/can_at90can128.h	72;"	d
+CAN_CLEAR_INT_MOB	drivers/can/can_at90can128.h	90;"	d
+CAN_CLEAR_MOB	drivers/can/can_at90can128.h	91;"	d
+CAN_CLEAR_STATUS_MOB	drivers/can/can_at90can128.h	86;"	d
+CAN_CONFIG_RX	drivers/can/can_at90can128.h	115;"	d
+CAN_CONFIG_TX	drivers/can/can_at90can128.h	110;"	d
+CAN_CTRL	drivers/can/can_at91sam7a1.c	/^can_controller_t * const CAN_CTRL = ((can_controller_t *) CAN_BASE_ADDRESS);$/;"	v
+CAN_CTRL	drivers/can/can_at91sam7a3.c	/^volatile can_controller_t * volatile CAN_CTRL = ((can_controller_t *)CAN0_BASE_ADDRESS);$/;"	v
+CAN_DISABLE	drivers/can/can_at90can128.h	77;"	d
+CAN_ENABLE	drivers/can/can_at90can128.h	76;"	d
+CAN_ERROR	drivers/can/can.h	/^	CAN_ERROR = 0,$/;"	e	enum:__anon25
+CAN_FRAME	drivers/can/can_at91sam7a1.h	135;"	d
+CAN_FULL_ABORT	drivers/can/can_at90can128.h	79;"	d
+CAN_GET_DLC	drivers/can/can_at90can128.h	120;"	d
+CAN_GET_EXT_ID	drivers/can/can_at90can128.h	123;"	d
+CAN_GET_IDE	drivers/can/can_at90can128.h	121;"	d
+CAN_GET_MOB	drivers/can/can_at90can128.h	84;"	d
+CAN_HPMOB	drivers/can/can_at90can128.h	97;"	d
+CAN_MBOXES	drivers/can/can_at91sam7a1.c	41;"	d	file:
+CAN_MBOXES	drivers/can/can_at91sam7a3.c	45;"	d	file:
+CAN_MOBS	drivers/can/can_at90can128.c	41;"	d	file:
+CAN_MOB_ABORT	drivers/can/can_at90can128.h	99;"	d
+CAN_MODE	drivers/can/can_at91sam7a1.c	62;"	d	file:
+CAN_MODE	drivers/can/can_at91sam7a3.c	75;"	d	file:
+CAN_NO_ERROR	drivers/can/can.h	/^	CAN_NO_ERROR = 1,$/;"	e	enum:__anon25
+CAN_RESET	drivers/can/can_at90can128.h	75;"	d
+CAN_RX_MBOX	drivers/can/can_at91sam7a1.c	39;"	d	file:
+CAN_RX_MBOX	drivers/can/can_at91sam7a3.c	43;"	d	file:
+CAN_RX_MOBS	drivers/can/can_at90can128.c	39;"	d	file:
+CAN_SET_DLC	drivers/can/can_at90can128.h	101;"	d
+CAN_SET_EXT_ID	drivers/can/can_at90can128.h	133;"	d
+CAN_SET_EXT_ID_12_5	drivers/can/can_at90can128.h	130;"	d
+CAN_SET_EXT_ID_20_13	drivers/can/can_at90can128.h	129;"	d
+CAN_SET_EXT_ID_28_21	drivers/can/can_at90can128.h	128;"	d
+CAN_SET_EXT_ID_4_0	drivers/can/can_at90can128.h	131;"	d
+CAN_SET_EXT_MSK	drivers/can/can_at90can128.h	139;"	d
+CAN_SET_IDE	drivers/can/can_at90can128.h	102;"	d
+CAN_SET_INTERRUPT	drivers/can/can_at90can128.h	71;"	d
+CAN_SET_MOB	drivers/can/can_at90can128.h	82;"	d
+CAN_TX_MBOX	drivers/can/can_at91sam7a1.c	40;"	d	file:
+CAN_TX_MBOX	drivers/can/can_at91sam7a3.c	44;"	d	file:
+CAN_TX_MOBS	drivers/can/can_at90can128.c	40;"	d	file:
+CERR	drivers/can/can_at91sam7a3.h	98;"	d
+CFP_BEGIN	interfaces/csp_if_can.c	/^	CFP_BEGIN = 0,$/;"	e	enum:cfp_frame_t	file:
+CFP_DST	interfaces/csp_if_can.c	69;"	d	file:
+CFP_FIELD	interfaces/csp_if_can.c	67;"	d	file:
+CFP_HOST_SIZE	interfaces/csp_if_can.c	61;"	d	file:
+CFP_ID	interfaces/csp_if_can.c	72;"	d	file:
+CFP_ID_CONN_MASK	interfaces/csp_if_can.c	83;"	d	file:
+CFP_ID_SIZE	interfaces/csp_if_can.c	64;"	d	file:
+CFP_MAKE_DST	interfaces/csp_if_can.c	77;"	d	file:
+CFP_MAKE_FIELD	interfaces/csp_if_can.c	75;"	d	file:
+CFP_MAKE_ID	interfaces/csp_if_can.c	80;"	d	file:
+CFP_MAKE_REMAIN	interfaces/csp_if_can.c	79;"	d	file:
+CFP_MAKE_SRC	interfaces/csp_if_can.c	76;"	d	file:
+CFP_MAKE_TYPE	interfaces/csp_if_can.c	78;"	d	file:
+CFP_MORE	interfaces/csp_if_can.c	/^	CFP_MORE = 1$/;"	e	enum:cfp_frame_t	file:
+CFP_REMAIN	interfaces/csp_if_can.c	71;"	d	file:
+CFP_REMAIN_SIZE	interfaces/csp_if_can.c	63;"	d	file:
+CFP_SRC	interfaces/csp_if_can.c	68;"	d	file:
+CFP_TYPE	interfaces/csp_if_can.c	70;"	d	file:
+CFP_TYPE_SIZE	interfaces/csp_if_can.c	62;"	d	file:
+CHANEN	drivers/can/can_at91sam7a1.h	130;"	d
+CHANNEL	drivers/can/can_at91sam7a1.h	/^   can_channel_t CHANNEL[16]; 		\/* CAN Channels					   	*\/$/;"	m	struct:__anon20
+CHANNEL	drivers/can/can_at91sam7a3.h	/^   can_channel_t CHANNEL[16]; 		\/* CAN Channels					   	*\/$/;"	m	struct:__anon27
+CISR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 CISR;			  	\/* Clear Interrupt Source Register	  *\/$/;"	m	struct:__anon20
+CONDITION_VARIABLE	arch/windows/windows_glue.h	/^typedef RTL_CONDITION_VARIABLE CONDITION_VARIABLE, *PCONDITION_VARIABLE;$/;"	t
+CONDITION_VARIABLE_INIT	arch/windows/windows_glue.h	11;"	d
+CONDITION_VARIABLE_LOCKMODE_SHARED	arch/windows/windows_glue.h	12;"	d
+CONMOB_MSK	drivers/can/can_at90can128.h	51;"	d
+CONN_CLIENT	csp_conn.h	/^	CONN_CLIENT = 0,$/;"	e	enum:__anon6
+CONN_CLOSED	csp_conn.h	/^	CONN_CLOSED = 0,$/;"	e	enum:__anon5
+CONN_OPEN	csp_conn.h	/^	CONN_OPEN = 1,$/;"	e	enum:__anon5
+CONN_SERVER	csp_conn.h	/^	CONN_SERVER = 1,$/;"	e	enum:__anon6
+CR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 CR;				 \/* Control Register						*\/$/;"	m	struct:__anon20
+CR	drivers/can/can_at91sam7a1.h	/^   uint32_t  CR;			 		\/* Control Register					 *\/$/;"	m	struct:__anon19
+CRC	drivers/can/can_at91sam7a1.h	136;"	d
+CSP_CAN_MTU	interfaces/csp_if_can.c	88;"	d	file:
+CSP_CAN_RX_QUEUE_SIZE	interfaces/csp_if_can.c	91;"	d	file:
+CSP_DEFINE_TASK	csp_route.c	/^CSP_DEFINE_TASK(csp_task_router) {$/;"	f
+CSP_DEFINE_TASK	interfaces/csp_if_can.c	/^CSP_DEFINE_TASK(csp_can_rx_task) {$/;"	f
+CSP_HMAC_LENGTH	crypto/csp_hmac.h	30;"	d
+CSP_ROUTER_RX_TIMEOUT	csp_route.c	68;"	d	file:
+CSP_ROUTER_RX_TIMEOUT	csp_route.c	70;"	d	file:
+CSP_XTEA_IV_LENGTH	crypto/csp_xtea.h	30;"	d
+CSR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 CSR;				\/* Clear Status Register				*\/$/;"	m	struct:__anon20
+CSR	drivers/can/can_at91sam7a1.h	/^   uint32_t  CSR;					\/* Clear Status Register				*\/$/;"	m	struct:__anon19
+DATA0	drivers/can/can_at91sam7a1.h	106;"	d
+DATA1	drivers/can/can_at91sam7a1.h	107;"	d
+DATA2	drivers/can/can_at91sam7a1.h	108;"	d
+DATA3	drivers/can/can_at91sam7a1.h	109;"	d
+DATA4	drivers/can/can_at91sam7a1.h	110;"	d
+DATA5	drivers/can/can_at91sam7a1.h	111;"	d
+DATA6	drivers/can/can_at91sam7a1.h	112;"	d
+DATA7	drivers/can/can_at91sam7a1.h	113;"	d
+DCR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 DCR;				\/* Disable Clock Register			  	*\/$/;"	m	struct:__anon20
+DISABLE_MOB	drivers/can/can_at90can128.h	107;"	d
+DLC	drivers/can/can_at91sam7a1.h	126;"	d
+DLCW	drivers/can/can_at91sam7a1.h	143;"	d
+DLC_MSK	drivers/can/can_at90can128.h	54;"	d
+DRA	drivers/can/can_at91sam7a1.h	/^   uint32_t  DRA;					\/* Data Register A					  *\/$/;"	m	struct:__anon19
+DRB	drivers/can/can_at91sam7a1.h	/^   uint32_t  DRB;					\/* Data Register B					  *\/$/;"	m	struct:__anon19
+DRPT	drivers/can/can_at91sam7a3.h	71;"	d
+ECR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ECR;				\/* Enable Clock Register			   	*\/$/;"	m	struct:__anon20
+ECR	drivers/can/can_at91sam7a3.h	/^   uint32_t  ECR;			 		\/* Error Counter Register		 		*\/$/;"	m	struct:__anon27
+ENDINIT	drivers/can/can_at91sam7a1.h	96;"	d
+ERPAS	drivers/can/can_at91sam7a1.h	97;"	d
+ERRA	drivers/can/can_at91sam7a3.h	90;"	d
+ERRP	drivers/can/can_at91sam7a3.h	92;"	d
+ERR_GEN_MSK	drivers/can/can_at90can128.h	33;"	d
+ERR_MOB_MSK	drivers/can/can_at90can128.h	45;"	d
+F0	crypto/csp_sha1.c	59;"	d	file:
+F1	crypto/csp_sha1.c	60;"	d	file:
+F2	crypto/csp_sha1.c	61;"	d	file:
+F3	crypto/csp_sha1.c	62;"	d	file:
+FEND	interfaces/csp_if_kiss.c	44;"	d	file:
+FERR	drivers/can/can_at91sam7a3.h	101;"	d
+FESC	interfaces/csp_if_kiss.c	45;"	d	file:
+FF_0	crypto/csp_sha1.c	64;"	d	file:
+FF_1	crypto/csp_sha1.c	65;"	d	file:
+FF_2	crypto/csp_sha1.c	66;"	d	file:
+FF_3	crypto/csp_sha1.c	67;"	d	file:
+FILLED	drivers/can/can_at91sam7a1.h	144;"	d
+HMAC_KEY_LENGTH	crypto/csp_hmac.c	34;"	d	file:
+HPMOB_MSK	drivers/can/can_at90can128.h	39;"	d
+ID	drivers/can/can_at91sam7a1.h	121;"	d
+IDE	drivers/can/can_at91sam7a1.h	127;"	d
+IDR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 IDR;				\/* Interrupt Disable Register		   *\/$/;"	m	struct:__anon20
+IDR	drivers/can/can_at91sam7a1.h	/^   uint32_t  IDR;					\/* Interrupt Disable Register		   *\/$/;"	m	struct:__anon19
+IDR	drivers/can/can_at91sam7a3.h	/^   uint32_t  IDR;					\/* Interrupt Disable Register		 	*\/$/;"	m	struct:__anon27
+IER	drivers/can/can_at91sam7a1.h	/^   uint32_t	 IER;				\/* Interrupt Enable Register			*\/$/;"	m	struct:__anon20
+IER	drivers/can/can_at91sam7a1.h	/^   uint32_t  IER;					\/* Interrupt Enable Register			*\/$/;"	m	struct:__anon19
+IER	drivers/can/can_at91sam7a3.h	/^   uint32_t  IER;					\/* Interrupt Enable Register		  	*\/$/;"	m	struct:__anon27
+IMR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 IMR;			   	\/* Interrupt Mask Register			  *\/$/;"	m	struct:__anon20
+IMR	drivers/can/can_at91sam7a1.h	/^   uint32_t  IMR;					\/* Interrupt Mask Register		 		*\/$/;"	m	struct:__anon19
+IMR	drivers/can/can_at91sam7a3.h	/^   uint32_t  IMR;					\/* Interrupt Mask Register				*\/$/;"	m	struct:__anon27
+INT_GEN_MSK	drivers/can/can_at90can128.h	36;"	d
+INT_MOB_MSK	drivers/can/can_at90can128.h	48;"	d
+IR	drivers/can/can_at91sam7a1.h	/^   uint32_t  IR;			 		\/* Identifier Register				  *\/$/;"	m	struct:__anon19
+ISR	drivers/can/can_at90can128.c	/^ISR(CANIT_vect) {$/;"	f
+ISS	drivers/can/can_at91sam7a1.h	101;"	d
+ISSR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ISSR;			  	\/* Interrupt Source Status Register	 *\/$/;"	m	struct:__anon20
+KISS_CRC32	interfaces/csp_if_kiss.c	37;"	d	file:
+KISS_MODE_ENDED	interfaces/csp_if_kiss.c	42;"	d	file:
+KISS_MODE_ESCAPED	interfaces/csp_if_kiss.c	41;"	d	file:
+KISS_MODE_NOT_STARTED	interfaces/csp_if_kiss.c	39;"	d	file:
+KISS_MODE_STARTED	interfaces/csp_if_kiss.c	40;"	d	file:
+LOAD32H	crypto/csp_sha1.c	42;"	d	file:
+LOAD32L	crypto/csp_xtea.c	47;"	d	file:
+LPM	drivers/can/can_at91sam7a3.h	65;"	d
+MABT	drivers/can/can_at91sam7a3.h	145;"	d
+MACR	drivers/can/can_at91sam7a3.h	156;"	d
+MAM	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MAM;				\/* Mailbox Acceptance Mask Register	 *\/$/;"	m	struct:__anon26
+MASK	drivers/can/can_at91sam7a1.h	116;"	d
+MB0	drivers/can/can_at91sam7a3.h	74;"	d
+MB1	drivers/can/can_at91sam7a3.h	75;"	d
+MB10	drivers/can/can_at91sam7a3.h	84;"	d
+MB11	drivers/can/can_at91sam7a3.h	85;"	d
+MB12	drivers/can/can_at91sam7a3.h	86;"	d
+MB13	drivers/can/can_at91sam7a3.h	87;"	d
+MB14	drivers/can/can_at91sam7a3.h	88;"	d
+MB15	drivers/can/can_at91sam7a3.h	89;"	d
+MB2	drivers/can/can_at91sam7a3.h	76;"	d
+MB3	drivers/can/can_at91sam7a3.h	77;"	d
+MB4	drivers/can/can_at91sam7a3.h	78;"	d
+MB5	drivers/can/can_at91sam7a3.h	79;"	d
+MB6	drivers/can/can_at91sam7a3.h	80;"	d
+MB7	drivers/can/can_at91sam7a3.h	81;"	d
+MB8	drivers/can/can_at91sam7a3.h	82;"	d
+MB9	drivers/can/can_at91sam7a3.h	83;"	d
+MBOX_FREE	drivers/can/can_at90can128.c	/^	MBOX_FREE = 0,$/;"	e	enum:__anon16	file:
+MBOX_FREE	drivers/can/can_at91sam7a1.c	/^	MBOX_FREE = 0,$/;"	e	enum:__anon17	file:
+MBOX_FREE	drivers/can/can_at91sam7a3.c	/^	MBOX_FREE = 0,$/;"	e	enum:__anon18	file:
+MBOX_FREE	drivers/can/can_socketcan.c	/^	MBOX_FREE = 0,$/;"	e	enum:__anon21	file:
+MBOX_NUM	drivers/can/can_socketcan.c	57;"	d	file:
+MBOX_USED	drivers/can/can_at90can128.c	/^	MBOX_USED = 1,$/;"	e	enum:__anon16	file:
+MBOX_USED	drivers/can/can_at91sam7a1.c	/^	MBOX_USED = 1,$/;"	e	enum:__anon17	file:
+MBOX_USED	drivers/can/can_at91sam7a3.c	/^	MBOX_USED = 1,$/;"	e	enum:__anon18	file:
+MBOX_USED	drivers/can/can_socketcan.c	/^	MBOX_USED = 1,$/;"	e	enum:__anon21	file:
+MCR	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MCR;		  		\/* Mailbox Control Register				*\/$/;"	m	struct:__anon26
+MDH	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MDH;				\/* Mailbox Date High Register		  	*\/$/;"	m	struct:__anon26
+MDL	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MDL;				\/* Mailbox Data Low Register		 	*\/$/;"	m	struct:__anon26
+MDLC	drivers/can/can_at91sam7a3.h	143;"	d
+MFID	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MFID;			   \/* Mailbox Family ID Register			*\/$/;"	m	struct:__anon26
+MFID	drivers/can/can_at91sam7a3.h	139;"	d
+MID	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MID;				\/* Mailbox ID Register			 		*\/$/;"	m	struct:__anon26
+MIDE	drivers/can/can_at91sam7a3.h	136;"	d
+MIDvA	drivers/can/can_at91sam7a3.h	135;"	d
+MIDvB	drivers/can/can_at91sam7a3.h	134;"	d
+MIN	crypto/csp_sha1.c	56;"	d	file:
+MMI	drivers/can/can_at91sam7a3.h	147;"	d
+MMR	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MMR;	 		 	\/* Mailbox Mode Register				*\/$/;"	m	struct:__anon26
+MOBNB_MSK	drivers/can/can_at90can128.h	42;"	d
+MOB_ACK_ERROR	drivers/can/can_at90can128.h	61;"	d
+MOB_BIT_ERROR	drivers/can/can_at90can128.h	65;"	d
+MOB_CRC_ERROR	drivers/can/can_at90can128.h	63;"	d
+MOB_DISABLE	drivers/can/can_at90can128.h	68;"	d
+MOB_FORM_ERROR	drivers/can/can_at90can128.h	62;"	d
+MOB_NOT_COMPLETED	drivers/can/can_at90can128.h	57;"	d
+MOB_NOT_REACHED	drivers/can/can_at90can128.h	67;"	d
+MOB_PENDING	drivers/can/can_at90can128.h	66;"	d
+MOB_RX_COMPLETED	drivers/can/can_at90can128.h	59;"	d
+MOB_RX_COMPLETED_DLCW	drivers/can/can_at90can128.h	60;"	d
+MOB_STUFF_ERROR	drivers/can/can_at90can128.h	64;"	d
+MOB_TX_COMPLETED	drivers/can/can_at90can128.h	58;"	d
+MOT	drivers/can/can_at91sam7a3.h	131;"	d
+MR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 MR;				 \/* Mode Register						*\/$/;"	m	struct:__anon20
+MR	drivers/can/can_at91sam7a3.h	/^   uint32_t  MR;					\/* Mode Register					   	*\/$/;"	m	struct:__anon27
+MRB	drivers/can/can_at91sam7a1.h	117;"	d
+MRDY	drivers/can/can_at91sam7a3.h	146;"	d
+MRTR	drivers/can/can_at91sam7a1.h	118;"	d
+MRTR	drivers/can/can_at91sam7a3.h	144;"	d
+MSK	drivers/can/can_at91sam7a1.h	/^   uint32_t  MSK;					\/* Mask Register						*\/$/;"	m	struct:__anon19
+MSR	drivers/can/can_at91sam7a3.h	/^   uint32_t	 MSR;		  		\/* Mailbox Status Register				*\/$/;"	m	struct:__anon26
+MTCR	drivers/can/can_at91sam7a3.h	157;"	d
+MTIMESTAMP	drivers/can/can_at91sam7a3.h	119;"	d
+OVDIS	drivers/can/can_at91sam7a1.h	83;"	d
+OVEN	drivers/can/can_at91sam7a1.h	82;"	d
+OVERWRITE	drivers/can/can_at91sam7a1.h	131;"	d
+OVL	drivers/can/can_at91sam7a3.h	67;"	d
+OVLSY	drivers/can/can_at91sam7a3.h	105;"	d
+OVRQ	drivers/can/can_at91sam7a1.h	100;"	d
+OVRUN	drivers/can/can_at91sam7a1.h	145;"	d
+PBUF_ELEMENTS	interfaces/csp_if_can.c	94;"	d	file:
+PBUF_TIMEOUT_MS	interfaces/csp_if_can.c	97;"	d	file:
+PCB	drivers/can/can_at91sam7a1.h	129;"	d
+PCONDITION_VARIABLE	arch/windows/windows_glue.h	/^typedef RTL_CONDITION_VARIABLE CONDITION_VARIABLE, *PCONDITION_VARIABLE;$/;"	t
+PF_CAN	drivers/can/can_socketcan.c	61;"	d	file:
+PHASE1	drivers/can/can_at91sam7a3.h	109;"	d
+PHASE2	drivers/can/can_at91sam7a3.h	108;"	d
+PHSEG1	drivers/can/can_at91sam7a1.h	90;"	d
+PHSEG2	drivers/can/can_at91sam7a1.h	91;"	d
+PIN_CAN_RX	drivers/can/can_at91sam7a3.c	48;"	d	file:
+PIN_CAN_TX	drivers/can/can_at91sam7a3.c	47;"	d	file:
+PMSR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 PMSR;			   \/* Power Management Status Register		*\/$/;"	m	struct:__anon20
+PORT_CLOSED	csp_port.h	/^	PORT_CLOSED = 0,$/;"	e	enum:__anon3
+PORT_OPEN	csp_port.h	/^	PORT_OPEN = 1,$/;"	e	enum:__anon3
+PRIOR	drivers/can/can_at91sam7a3.h	130;"	d
+PROGMEM	csp_crc32.c	/^static const uint32_t crc_tab[256] PROGMEM = {$/;"	v	file:
+PROGMEM	interfaces/csp_if_kiss.c	/^static const uint32_t kiss_crc_tab[256] PROGMEM = {$/;"	v	file:
+PROP	drivers/can/can_at91sam7a1.h	87;"	d
+PROPAG	drivers/can/can_at91sam7a3.h	110;"	d
+PTHREAD_QUEUE_EMPTY	arch/macosx/pthread_queue.h	41;"	d
+PTHREAD_QUEUE_EMPTY	arch/posix/pthread_queue.h	40;"	d
+PTHREAD_QUEUE_ERROR	arch/macosx/pthread_queue.h	40;"	d
+PTHREAD_QUEUE_ERROR	arch/posix/pthread_queue.h	39;"	d
+PTHREAD_QUEUE_FULL	arch/macosx/pthread_queue.h	42;"	d
+PTHREAD_QUEUE_FULL	arch/posix/pthread_queue.h	41;"	d
+PTHREAD_QUEUE_OK	arch/macosx/pthread_queue.h	43;"	d
+PTHREAD_QUEUE_OK	arch/posix/pthread_queue.h	42;"	d
+RBSY	drivers/can/can_at91sam7a3.h	103;"	d
+RDP_ACK	transport/csp_rdp.c	48;"	d	file:
+RDP_CLOSED	csp_conn.h	/^	RDP_CLOSED = 0,$/;"	e	enum:__anon7
+RDP_CLOSE_WAIT	csp_conn.h	/^	RDP_CLOSE_WAIT,$/;"	e	enum:__anon7
+RDP_EAK	transport/csp_rdp.c	49;"	d	file:
+RDP_OPEN	csp_conn.h	/^	RDP_OPEN,$/;"	e	enum:__anon7
+RDP_RST	transport/csp_rdp.c	50;"	d	file:
+RDP_SYN	transport/csp_rdp.c	47;"	d	file:
+RDP_SYN_RCVD	csp_conn.h	/^	RDP_SYN_RCVD,$/;"	e	enum:__anon7
+RDP_SYN_SENT	csp_conn.h	/^	RDP_SYN_SENT,$/;"	e	enum:__anon7
+REC	drivers/can/can_at91sam7a1.h	102;"	d
+REC	drivers/can/can_at91sam7a3.h	122;"	d
+RESB	drivers/can/can_at91sam7a1.h	122;"	d
+RFRAME	drivers/can/can_at91sam7a1.h	141;"	d
+ROL	crypto/csp_sha1.c	34;"	d	file:
+RPLYV	drivers/can/can_at91sam7a1.h	128;"	d
+RTL_CONDITION_VARIABLE	arch/windows/windows_glue.h	/^typedef PVOID RTL_CONDITION_VARIABLE;$/;"	t
+RTL_CONDITION_VARIABLE_INIT	arch/windows/windows_glue.h	9;"	d
+RTL_CONDITION_VARIABLE_LOCKMODE_SHARED	arch/windows/windows_glue.h	10;"	d
+RTR	drivers/can/can_at91sam7a1.h	123;"	d
+RXOK	drivers/can/can_at91sam7a1.h	139;"	d
+Reserved	drivers/can/can_at91sam7a3.h	/^   uint32_t  Reserved[117];		 \/* Reserved		 					*\/$/;"	m	struct:__anon27
+ReservedA	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ReservedA[20];	  \/* Reserved								*\/$/;"	m	struct:__anon20
+ReservedA	drivers/can/can_at91sam7a1.h	/^   uint32_t  ReservedA[5];   		\/* Reserved						   	*\/$/;"	m	struct:__anon19
+ReservedB	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ReservedB;		  \/* Reserved								*\/$/;"	m	struct:__anon20
+ReservedC	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ReservedC;		  \/* Reserved							 *\/$/;"	m	struct:__anon20
+ReservedD	drivers/can/can_at91sam7a1.h	/^   uint32_t	 ReservedD[22];	 	\/* Reserved							 *\/$/;"	m	struct:__anon20
+SERR	drivers/can/can_at91sam7a3.h	99;"	d
+SHA1_BLOCKSIZE	crypto/csp_sha1.h	31;"	d
+SHA1_DIGESTSIZE	crypto/csp_sha1.h	32;"	d
+SIDR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 SIDR;			  	\/* Source Interrupt Disable Register	*\/$/;"	m	struct:__anon20
+SIER	drivers/can/can_at91sam7a1.h	/^   uint32_t	 SIER;			  	\/* Source Interrupt Enable Register	 *\/$/;"	m	struct:__anon20
+SIMR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 SIMR;		  		\/* Source Interrupt Mask Register	   *\/$/;"	m	struct:__anon20
+SLEEP	drivers/can/can_at91sam7a3.h	94;"	d
+SMP	drivers/can/can_at91sam7a1.h	89;"	d
+SMP	drivers/can/can_at91sam7a3.h	113;"	d
+SR	drivers/can/can_at91sam7a1.h	/^   uint32_t	 SR;				 \/* Status Register					  *\/$/;"	m	struct:__anon20
+SR	drivers/can/can_at91sam7a1.h	/^   uint32_t  SR;			 		\/* Status Register					  *\/$/;"	m	struct:__anon19
+SR	drivers/can/can_at91sam7a3.h	/^   uint32_t  SR;			 		\/* Status Register				  	*\/$/;"	m	struct:__anon27
+STORE32H	crypto/csp_sha1.c	37;"	d	file:
+STORE32L	crypto/csp_xtea.c	42;"	d	file:
+STORE64H	crypto/csp_sha1.c	47;"	d	file:
+STP	drivers/can/can_at91sam7a1.h	/^   uint32_t  STP;					\/* Stamp Register					   *\/$/;"	m	struct:__anon19
+STUFF	drivers/can/can_at91sam7a1.h	137;"	d
+SWJ	drivers/can/can_at91sam7a1.h	88;"	d
+SWJ	drivers/can/can_at91sam7a3.h	111;"	d
+SWRST	drivers/can/can_at91sam7a1.h	77;"	d
+TBSY	drivers/can/can_at91sam7a3.h	104;"	d
+TCR	drivers/can/can_at91sam7a3.h	/^   uint32_t  TCR;					\/* Tranfer Counter Register				*\/$/;"	m	struct:__anon27
+TEC	drivers/can/can_at91sam7a1.h	103;"	d
+TEC	drivers/can/can_at91sam7a3.h	123;"	d
+TEOF	drivers/can/can_at91sam7a3.h	68;"	d
+TFEND	interfaces/csp_if_kiss.c	46;"	d	file:
+TFESC	interfaces/csp_if_kiss.c	47;"	d	file:
+TIM	drivers/can/can_at91sam7a3.h	/^   uint32_t  TIM;					\/* Timer Register					  	*\/$/;"	m	struct:__anon27
+TIMER	drivers/can/can_at91sam7a3.h	116;"	d
+TIMESTP	drivers/can/can_at91sam7a3.h	/^   uint32_t  TIMESTP;		  		\/* Timestamp Register			   	*\/$/;"	m	struct:__anon27
+TIMFRZ	drivers/can/can_at91sam7a3.h	70;"	d
+TIMRST	drivers/can/can_at91sam7a3.h	126;"	d
+TMIMEMARK	drivers/can/can_at91sam7a3.h	129;"	d
+TNC_DATA	interfaces/csp_if_kiss.c	49;"	d	file:
+TNC_RETURN	interfaces/csp_if_kiss.c	51;"	d	file:
+TNC_SET_HARDWARE	interfaces/csp_if_kiss.c	50;"	d	file:
+TOVF	drivers/can/can_at91sam7a3.h	96;"	d
+TSTP	drivers/can/can_at91sam7a3.h	97;"	d
+TTM	drivers/can/can_at91sam7a3.h	69;"	d
+TXOK	drivers/can/can_at91sam7a1.h	140;"	d
+WAKEUP	drivers/can/can_at91sam7a3.h	95;"	d
+WARN	drivers/can/can_at91sam7a3.h	91;"	d
+WINDOWS_GLUE_H	arch/windows/windows_glue.h	2;"	d
+WINDOWS_QUEUE_EMPTY	arch/windows/windows_queue.h	15;"	d
+WINDOWS_QUEUE_ERROR	arch/windows/windows_queue.h	14;"	d
+WINDOWS_QUEUE_FULL	arch/windows/windows_queue.h	16;"	d
+WINDOWS_QUEUE_OK	arch/windows/windows_queue.h	17;"	d
+WRERROR	drivers/can/can_at91sam7a1.h	142;"	d
+XTEA_BLOCKSIZE	crypto/csp_xtea.c	35;"	d	file:
+XTEA_KEY_LENGTH	crypto/csp_xtea.c	37;"	d	file:
+XTEA_ROUNDS	crypto/csp_xtea.c	36;"	d	file:
+_CAN_AT90CAN128_H_	drivers/can/can_at90can128.h	24;"	d
+_CAN_AT91SAM7A1_H_	drivers/can/can_at91sam7a1.h	22;"	d
+_CAN_AT91SAM7A3_H_	drivers/can/can_at91sam7a3.h	22;"	d
+_CAN_H_	drivers/can/can.h	22;"	d
+_CSP_CONN_H_	csp_conn.h	22;"	d
+_CSP_CRC32_H_	csp_crc32.h	22;"	d
+_CSP_HMAC_H_	crypto/csp_hmac.h	22;"	d
+_CSP_IO_H_	csp_io.h	22;"	d
+_CSP_PORT_H_	csp_port.h	22;"	d
+_CSP_ROUTE_H_	csp_route.h	22;"	d
+_CSP_SHA1_H_	crypto/csp_sha1.h	22;"	d
+_CSP_TRANSPORT_H_	transport/csp_transport.h	22;"	d
+_CSP_XTEA_H_	crypto/csp_xtea.h	22;"	d
+_PTHREAD_QUEUE_H_	arch/macosx/pthread_queue.h	27;"	d
+_PTHREAD_QUEUE_H_	arch/posix/pthread_queue.h	27;"	d
+_WINDOWS_QUEUE_H_	arch/windows/windows_queue.h	2;"	d
+ack	transport/csp_rdp.c	/^			unsigned int ack : 1;$/;"	m	struct:__anon13::__anon14::__anon15	file:
+ack_delay_count	csp_conn.h	/^	uint32_t ack_delay_count;$/;"	m	struct:__anon8
+ack_nr	transport/csp_rdp.c	/^	uint16_t ack_nr;$/;"	m	struct:__anon13	file:
+ack_timeout	csp_conn.h	/^	uint32_t ack_timeout;$/;"	m	struct:__anon8
+ack_timestamp	csp_conn.h	/^	uint32_t ack_timestamp;$/;"	m	struct:__anon8
+arr_conn	csp_conn.c	/^static csp_conn_t arr_conn[CSP_CONN_MAX];$/;"	v	file:
+bitrate	drivers/can/can_at90can128.c	/^static uint32_t bitrate;$/;"	v	file:
+buf	crypto/csp_sha1.h	/^	uint8_t buf[SHA1_BLOCKSIZE];$/;"	m	struct:__anon10
+buffer	arch/macosx/pthread_queue.h	/^	void * buffer;$/;"	m	struct:pthread_queue_s
+buffer	arch/posix/pthread_queue.h	/^	void * buffer;$/;"	m	struct:pthread_queue_s
+buffer	arch/windows/windows_queue.h	/^    void * buffer;$/;"	m	struct:windows_queue_s
+can_channel_t	drivers/can/can_at91sam7a1.h	/^} volatile can_channel_t;$/;"	t
+can_channel_t	drivers/can/can_at91sam7a3.h	/^} volatile can_channel_t;$/;"	t
+can_configure_bitrate	drivers/can/can_at90can128.c	/^int can_configure_bitrate(unsigned long int afcpu, uint32_t bps) {$/;"	f
+can_configure_mobs	drivers/can/can_at90can128.c	/^void can_configure_mobs(void) {$/;"	f
+can_controller_t	drivers/can/can_at91sam7a1.h	/^} volatile can_controller_t;$/;"	t
+can_controller_t	drivers/can/can_at91sam7a3.h	/^} volatile can_controller_t;$/;"	t
+can_dsr	drivers/can/can_at91sam7a1.c	/^static void __attribute__ ((noinline)) can_dsr(void) {$/;"	f	file:
+can_error_t	drivers/can/can.h	/^} can_error_t;$/;"	t	typeref:enum:__anon25
+can_find_oldest_mob	drivers/can/can_at90can128.c	/^static inline uint8_t can_find_oldest_mob(void) {$/;"	f	file:
+can_frame_t	drivers/can/can.h	/^} can_frame_t;$/;"	t	typeref:struct:__anon23
+can_id	drivers/can/can_at90can128.c	/^uint32_t can_id;$/;"	v
+can_id	drivers/can/can_at91sam7a1.c	/^uint32_t can_id;$/;"	v
+can_id	drivers/can/can_at91sam7a3.c	/^uint32_t can_id;$/;"	v
+can_id_t	drivers/can/can.h	/^typedef uint32_t can_id_t;$/;"	t
+can_init	drivers/can/can_at90can128.c	/^int can_init(uint32_t id, uint32_t mask, can_tx_callback_t atxcb, can_rx_callback_t arxcb, struct csp_can_config *conf) {$/;"	f
+can_init	drivers/can/can_at91sam7a1.c	/^int can_init(uint32_t id, uint32_t mask, can_tx_callback_t atxcb, can_rx_callback_t arxcb, struct csp_can_config *conf) {$/;"	f
+can_init	drivers/can/can_at91sam7a3.c	/^int can_init(uint32_t id, uint32_t mask, can_tx_callback_t atxcb, can_rx_callback_t arxcb, struct csp_can_config *conf) {$/;"	f
+can_init	drivers/can/can_socketcan.c	/^int can_init(uint32_t id, uint32_t mask, can_tx_callback_t atxcb, can_rx_callback_t arxcb, struct csp_can_config *conf) {$/;"	f
+can_init_interrupt	drivers/can/can_at91sam7a1.c	/^static void can_init_interrupt(uint32_t id, uint32_t mask) {$/;"	f	file:
+can_init_interrupt	drivers/can/can_at91sam7a3.c	/^static void can_init_interrupt(uint32_t id, uint32_t mask) {$/;"	f	file:
+can_isr	drivers/can/can_at91sam7a1.c	/^static void __attribute__((naked)) can_isr(void) {$/;"	f	file:
+can_isr	drivers/can/can_at91sam7a3.c	/^void __attribute__ ((__interrupt__)) can_isr(void) {$/;"	f
+can_mask	drivers/can/can_at90can128.c	/^uint32_t can_mask;$/;"	v
+can_mask	drivers/can/can_at91sam7a1.c	/^uint32_t can_mask;$/;"	v
+can_mask	drivers/can/can_at91sam7a3.c	/^uint32_t can_mask;$/;"	v
+can_mbox_init	drivers/can/can_socketcan.c	/^int can_mbox_init(void) {$/;"	f
+can_reset	drivers/can/can_at90can128.c	/^int can_reset(unsigned long int afcpu, uint32_t bps) {$/;"	f
+can_rx_callback_t	drivers/can/can.h	/^typedef int (*can_rx_callback_t)(can_frame_t * frame, CSP_BASE_TYPE * task_woken);$/;"	t
+can_rx_queue	interfaces/csp_if_can.c	/^static csp_queue_handle_t can_rx_queue;$/;"	v	file:
+can_rx_task	interfaces/csp_if_can.c	/^static csp_thread_handle_t can_rx_task;$/;"	v	file:
+can_send	drivers/can/can_at90can128.c	/^int can_send(can_id_t id, uint8_t data[], uint8_t dlc, CSP_BASE_TYPE * task_woken) {$/;"	f
+can_send	drivers/can/can_at91sam7a1.c	/^int can_send(can_id_t id, uint8_t data[], uint8_t dlc, CSP_BASE_TYPE * task_woken) {$/;"	f
+can_send	drivers/can/can_at91sam7a3.c	/^int can_send(can_id_t id, uint8_t data[], uint8_t dlc, CSP_BASE_TYPE * task_woken) {$/;"	f
+can_send	drivers/can/can_socketcan.c	/^int can_send(can_id_t id, uint8_t data[], uint8_t dlc, CSP_BASE_TYPE * task_woken) {$/;"	f
+can_socket	drivers/can/can_socketcan.c	/^int can_socket; \/** SocketCAN socket handle *\/$/;"	v
+can_tx_callback_t	drivers/can/can.h	/^typedef int (*can_tx_callback_t)(can_id_t id, can_error_t error, CSP_BASE_TYPE * task_woken);$/;"	t
+cfp_frame_t	interfaces/csp_if_can.c	/^enum cfp_frame_t {$/;"	g	file:
+cfp_id	interfaces/csp_if_can.c	/^static int cfp_id;$/;"	v	file:
+cfpid	interfaces/csp_if_can.c	/^	uint32_t cfpid;					\/**< Connection CFP identification number *\/$/;"	m	struct:__anon2	file:
+clock_speed	drivers/can/can_at90can128.c	/^static unsigned long int clock_speed;$/;"	v	file:
+cond_empty	arch/macosx/pthread_queue.h	/^	pthread_cond_t cond_empty;$/;"	m	struct:pthread_queue_s
+cond_empty	arch/posix/pthread_queue.h	/^	pthread_cond_t cond_empty;$/;"	m	struct:pthread_queue_s
+cond_empty	arch/windows/windows_queue.h	/^    CONDITION_VARIABLE cond_empty;$/;"	m	struct:windows_queue_s
+cond_full	arch/macosx/pthread_queue.h	/^	pthread_cond_t cond_full;$/;"	m	struct:pthread_queue_s
+cond_full	arch/posix/pthread_queue.h	/^	pthread_cond_t cond_full;$/;"	m	struct:pthread_queue_s
+cond_full	arch/windows/windows_queue.h	/^    CONDITION_VARIABLE cond_full;$/;"	m	struct:windows_queue_s
+conn_lock	csp_conn.c	/^static csp_bin_sem_handle_t conn_lock;$/;"	v	file:
+conn_timeout	csp_conn.h	/^	uint32_t conn_timeout;$/;"	m	struct:__anon8
+count	csp_buffer.c	/^static unsigned int count, size;$/;"	v	file:
+csp_accept	csp_io.c	/^csp_conn_t * csp_accept(csp_socket_t * sock, uint32_t timeout) {$/;"	f
+csp_betoh16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_betoh16(uint16_t be16) {$/;"	f
+csp_betoh32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_betoh32(uint32_t be32) {$/;"	f
+csp_betoh64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_betoh64(uint64_t be64) {$/;"	f
+csp_bin_sem_create	arch/freertos/csp_semaphore.c	/^int csp_bin_sem_create(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_create	arch/macosx/csp_semaphore.c	/^int csp_bin_sem_create(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_create	arch/posix/csp_semaphore.c	/^int csp_bin_sem_create(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_create	arch/windows/csp_semaphore.c	/^int csp_bin_sem_create(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_post	arch/freertos/csp_semaphore.c	/^int csp_bin_sem_post(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_post	arch/macosx/csp_semaphore.c	/^int csp_bin_sem_post(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_post	arch/posix/csp_semaphore.c	/^int csp_bin_sem_post(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_post	arch/windows/csp_semaphore.c	/^int csp_bin_sem_post(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_post_isr	arch/freertos/csp_semaphore.c	/^int csp_bin_sem_post_isr(csp_bin_sem_handle_t * sem, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_bin_sem_post_isr	arch/macosx/csp_semaphore.c	/^int csp_bin_sem_post_isr(csp_bin_sem_handle_t * sem, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_bin_sem_post_isr	arch/posix/csp_semaphore.c	/^int csp_bin_sem_post_isr(csp_bin_sem_handle_t * sem, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_bin_sem_post_isr	arch/windows/csp_semaphore.c	/^int csp_bin_sem_post_isr(csp_bin_sem_handle_t * sem, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_bin_sem_remove	arch/freertos/csp_semaphore.c	/^int csp_bin_sem_remove(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_remove	arch/macosx/csp_semaphore.c	/^int csp_bin_sem_remove(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_remove	arch/posix/csp_semaphore.c	/^int csp_bin_sem_remove(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_remove	arch/windows/csp_semaphore.c	/^int csp_bin_sem_remove(csp_bin_sem_handle_t * sem) {$/;"	f
+csp_bin_sem_wait	arch/freertos/csp_semaphore.c	/^int csp_bin_sem_wait(csp_bin_sem_handle_t * sem, uint32_t timeout) {$/;"	f
+csp_bin_sem_wait	arch/macosx/csp_semaphore.c	/^int csp_bin_sem_wait(csp_bin_sem_handle_t * sem, uint32_t timeout) {$/;"	f
+csp_bin_sem_wait	arch/posix/csp_semaphore.c	/^int csp_bin_sem_wait(csp_bin_sem_handle_t * sem, uint32_t timeout) {$/;"	f
+csp_bin_sem_wait	arch/windows/csp_semaphore.c	/^int csp_bin_sem_wait(csp_bin_sem_handle_t * sem, uint32_t timeout) {$/;"	f
+csp_bind	csp_port.c	/^int csp_bind(csp_socket_t * socket, uint8_t port) {$/;"	f
+csp_buf_free	csp_services.c	/^void csp_buf_free(uint8_t node, uint32_t timeout) {$/;"	f
+csp_buffer_clone	csp_buffer.c	/^void *csp_buffer_clone(void *buffer) {$/;"	f
+csp_buffer_free	csp_buffer.c	/^void csp_buffer_free(void *packet) {$/;"	f
+csp_buffer_free_isr	csp_buffer.c	/^void csp_buffer_free_isr(void *packet) {$/;"	f
+csp_buffer_get	csp_buffer.c	/^void *csp_buffer_get(size_t buf_size) {$/;"	f
+csp_buffer_get_isr	csp_buffer.c	/^void *csp_buffer_get_isr(size_t buf_size) {$/;"	f
+csp_buffer_init	csp_buffer.c	/^int csp_buffer_init(int buf_count, int buf_size) {$/;"	f
+csp_buffer_list	csp_buffer.c	/^static void *csp_buffer_list;$/;"	v	file:
+csp_buffer_remaining	csp_buffer.c	/^int csp_buffer_remaining(void) {$/;"	f
+csp_buffer_size	csp_buffer.c	/^int csp_buffer_size(void) {$/;"	f
+csp_buffers	csp_buffer.c	/^static csp_queue_handle_t csp_buffers;$/;"	v	file:
+csp_bytesize	csp_route.c	/^static int csp_bytesize(char *buf, int len, unsigned long int n) {$/;"	f	file:
+csp_can_init	interfaces/csp_if_can.c	/^int csp_can_init(uint8_t mode, struct csp_can_config *conf) {$/;"	f
+csp_can_process_frame	interfaces/csp_if_can.c	/^static int csp_can_process_frame(can_frame_t *frame) {$/;"	f	file:
+csp_can_tx	interfaces/csp_if_can.c	/^int csp_can_tx(csp_packet_t *packet, uint32_t timeout) {$/;"	f
+csp_close	csp_conn.c	/^int csp_close(csp_conn_t * conn) {$/;"	f
+csp_cmp	csp_services.c	/^int csp_cmp(uint8_t node, uint32_t timeout, uint8_t code, int membsize, struct csp_cmp_message * msg) {$/;"	f
+csp_cmp_handler	csp_service_handler.c	/^int csp_cmp_handler(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f
+csp_conn_allocate	csp_conn.c	/^csp_conn_t * csp_conn_allocate(csp_conn_type_t type) {$/;"	f
+csp_conn_check_timeouts	csp_conn.c	/^void csp_conn_check_timeouts(void) {$/;"	f
+csp_conn_dport	csp_conn.c	/^inline int csp_conn_dport(csp_conn_t * conn) {$/;"	f
+csp_conn_dst	csp_conn.c	/^inline int csp_conn_dst(csp_conn_t * conn) {$/;"	f
+csp_conn_enqueue_packet	csp_conn.c	/^int csp_conn_enqueue_packet(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f
+csp_conn_find	csp_conn.c	/^csp_conn_t * csp_conn_find(uint32_t id, uint32_t mask) {$/;"	f
+csp_conn_flags	csp_conn.c	/^inline int csp_conn_flags(csp_conn_t * conn) {$/;"	f
+csp_conn_flush_rx_queue	csp_conn.c	/^int csp_conn_flush_rx_queue(csp_conn_t * conn) {$/;"	f
+csp_conn_get_rxq	csp_conn.c	/^int csp_conn_get_rxq(int prio) {$/;"	f
+csp_conn_init	csp_conn.c	/^int csp_conn_init(void) {$/;"	f
+csp_conn_lock	csp_conn.c	/^int csp_conn_lock(csp_conn_t * conn, uint32_t timeout) {$/;"	f
+csp_conn_new	csp_conn.c	/^csp_conn_t * csp_conn_new(csp_id_t idin, csp_id_t idout) {$/;"	f
+csp_conn_print_table	csp_conn.c	/^void csp_conn_print_table(void) {$/;"	f
+csp_conn_print_table_str	csp_conn.c	/^int csp_conn_print_table_str(char * str_buf, int str_size) {$/;"	f
+csp_conn_s	csp_conn.h	/^struct csp_conn_s {$/;"	s
+csp_conn_sport	csp_conn.c	/^inline int csp_conn_sport(csp_conn_t * conn) {$/;"	f
+csp_conn_src	csp_conn.c	/^inline int csp_conn_src(csp_conn_t * conn) {$/;"	f
+csp_conn_state_t	csp_conn.h	/^} csp_conn_state_t;$/;"	t	typeref:enum:__anon5
+csp_conn_type_t	csp_conn.h	/^} csp_conn_type_t;$/;"	t	typeref:enum:__anon6
+csp_conn_unlock	csp_conn.c	/^int csp_conn_unlock(csp_conn_t * conn) {$/;"	f
+csp_connect	csp_conn.c	/^csp_conn_t * csp_connect(uint8_t prio, uint8_t dest, uint8_t dport, uint32_t timeout, uint32_t opts) {$/;"	f
+csp_crc32_append	csp_crc32.c	/^int csp_crc32_append(csp_packet_t * packet) {$/;"	f
+csp_crc32_memory	csp_crc32.c	/^uint32_t csp_crc32_memory(const uint8_t * data, uint32_t length) {$/;"	f
+csp_crc32_verify	csp_crc32.c	/^int csp_crc32_verify(csp_packet_t * packet) {$/;"	f
+csp_critical_lock	csp_buffer.c	/^CSP_DEFINE_CRITICAL(csp_critical_lock);$/;"	v
+csp_debug_get_level	csp_debug.c	/^int csp_debug_get_level(csp_debug_level_t level) {$/;"	f
+csp_debug_hook_func	csp_debug.c	/^csp_debug_hook_func_t csp_debug_hook_func = NULL;$/;"	v
+csp_debug_hook_set	csp_debug.c	/^void csp_debug_hook_set(csp_debug_hook_func_t f) {$/;"	f
+csp_debug_level_enabled	csp_debug.c	/^unsigned char csp_debug_level_enabled[] = {$/;"	v
+csp_debug_set_level	csp_debug.c	/^void csp_debug_set_level(csp_debug_level_t level, bool value) {$/;"	f
+csp_debug_toggle_level	csp_debug.c	/^void csp_debug_toggle_level(csp_debug_level_t level) {$/;"	f
+csp_free	arch/freertos/csp_malloc.c	/^void csp_free(void *ptr) {$/;"	f
+csp_free	arch/macosx/csp_malloc.c	/^void csp_free(void *ptr) {$/;"	f
+csp_free	arch/posix/csp_malloc.c	/^void csp_free(void *ptr) {$/;"	f
+csp_free	arch/windows/csp_malloc.c	/^void csp_free(void * ptr) {$/;"	f
+csp_get_hostname	csp_io.c	/^char * csp_get_hostname(void) {$/;"	f
+csp_get_model	csp_io.c	/^char * csp_get_model(void) {$/;"	f
+csp_get_ms	arch/freertos/csp_time.c	/^uint32_t csp_get_ms(void) {$/;"	f
+csp_get_ms	arch/macosx/csp_time.c	/^uint32_t csp_get_ms(void) {$/;"	f
+csp_get_ms	arch/posix/csp_time.c	/^uint32_t csp_get_ms(void) {$/;"	f
+csp_get_ms	arch/windows/csp_time.c	/^uint32_t csp_get_ms(void) {$/;"	f
+csp_get_ms_isr	arch/freertos/csp_time.c	/^uint32_t csp_get_ms_isr(void) {$/;"	f
+csp_get_ms_isr	arch/macosx/csp_time.c	/^uint32_t csp_get_ms_isr(void) {$/;"	f
+csp_get_ms_isr	arch/posix/csp_time.c	/^uint32_t csp_get_ms_isr(void) {$/;"	f
+csp_get_ms_isr	arch/windows/csp_time.c	/^uint32_t csp_get_ms_isr(void) {$/;"	f
+csp_get_s	arch/freertos/csp_time.c	/^uint32_t csp_get_s(void) {$/;"	f
+csp_get_s	arch/macosx/csp_time.c	/^uint32_t csp_get_s(void) {$/;"	f
+csp_get_s	arch/posix/csp_time.c	/^uint32_t csp_get_s(void) {$/;"	f
+csp_get_s	arch/windows/csp_time.c	/^uint32_t csp_get_s(void) {$/;"	f
+csp_get_s_isr	arch/freertos/csp_time.c	/^uint32_t csp_get_s_isr(void) {$/;"	f
+csp_get_s_isr	arch/macosx/csp_time.c	/^uint32_t csp_get_s_isr(void) {$/;"	f
+csp_get_s_isr	arch/posix/csp_time.c	/^uint32_t csp_get_s_isr(void) {$/;"	f
+csp_get_s_isr	arch/windows/csp_time.c	/^uint32_t csp_get_s_isr(void) {$/;"	f
+csp_hmac_append	crypto/csp_hmac.c	/^int csp_hmac_append(csp_packet_t * packet) {$/;"	f
+csp_hmac_done	crypto/csp_hmac.c	/^int csp_hmac_done(hmac_state * hmac, uint8_t * out) {$/;"	f
+csp_hmac_init	crypto/csp_hmac.c	/^int csp_hmac_init(hmac_state * hmac, const uint8_t * key, uint32_t keylen) {$/;"	f
+csp_hmac_key	crypto/csp_hmac.c	/^static uint8_t csp_hmac_key[HMAC_KEY_LENGTH];$/;"	v	file:
+csp_hmac_memory	crypto/csp_hmac.c	/^int csp_hmac_memory(const uint8_t * key, uint32_t keylen, const uint8_t * data, uint32_t datalen, uint8_t * hmac) {$/;"	f
+csp_hmac_process	crypto/csp_hmac.c	/^int csp_hmac_process(hmac_state * hmac, const uint8_t * in, uint32_t inlen) {$/;"	f
+csp_hmac_set_key	crypto/csp_hmac.c	/^int csp_hmac_set_key(char * key, uint32_t keylen) {$/;"	f
+csp_hmac_verify	crypto/csp_hmac.c	/^int csp_hmac_verify(csp_packet_t * packet) {$/;"	f
+csp_hostname	csp_io.c	/^static char * csp_hostname = NULL;$/;"	v	file:
+csp_htobe16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_htobe16(uint16_t h16) {$/;"	f
+csp_htobe32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_htobe32(uint32_t h32) {$/;"	f
+csp_htobe64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_htobe64(uint64_t h64) {$/;"	f
+csp_htole16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_htole16(uint16_t h16) {$/;"	f
+csp_htole32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_htole32(uint32_t h32) {$/;"	f
+csp_htole64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_htole64(uint64_t h64) {$/;"	f
+csp_hton16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_hton16(uint16_t h16) {$/;"	f
+csp_hton32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_hton32(uint32_t h32) {$/;"	f
+csp_hton64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_hton64(uint64_t h64) {$/;"	f
+csp_i2c_handle	interfaces/csp_if_i2c.c	/^static int csp_i2c_handle = 0;$/;"	v	file:
+csp_i2c_init	interfaces/csp_if_i2c.c	/^int csp_i2c_init(uint8_t addr, int handle, int speed) {$/;"	f
+csp_i2c_rx	interfaces/csp_if_i2c.c	/^void csp_i2c_rx(i2c_frame_t * frame, void * pxTaskWoken) {$/;"	f
+csp_i2c_tx	interfaces/csp_if_i2c.c	/^int csp_i2c_tx(csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_if_can	interfaces/csp_if_can.c	/^csp_iface_t csp_if_can = {$/;"	v
+csp_if_i2c	interfaces/csp_if_i2c.c	/^csp_iface_t csp_if_i2c = {$/;"	v
+csp_if_kiss	interfaces/csp_if_kiss.c	/^csp_iface_t csp_if_kiss = {$/;"	v
+csp_if_lo	interfaces/csp_if_lo.c	/^csp_iface_t csp_if_lo = {$/;"	v
+csp_init	csp_io.c	/^int csp_init(unsigned char address) {$/;"	f
+csp_kiss_init	interfaces/csp_if_kiss.c	/^int csp_kiss_init(csp_kiss_putstr_f kiss_putstr_f, csp_kiss_discard_f kiss_discard_f) {$/;"	f
+csp_kiss_rx	interfaces/csp_if_kiss.c	/^void csp_kiss_rx(uint8_t * buf, int len, void * pxTaskWoken) {$/;"	f
+csp_kiss_tx	interfaces/csp_if_kiss.c	/^int csp_kiss_tx(csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_letoh16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_letoh16(uint16_t le16) {$/;"	f
+csp_letoh32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_letoh32(uint32_t le32) {$/;"	f
+csp_letoh64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_letoh64(uint64_t le64) {$/;"	f
+csp_listen	csp_port.c	/^int csp_listen(csp_socket_t * socket, size_t conn_queue_length) {$/;"	f
+csp_lo_tx	interfaces/csp_if_lo.c	/^int csp_lo_tx(csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_malloc	arch/freertos/csp_malloc.c	/^void * csp_malloc(size_t size) {$/;"	f
+csp_malloc	arch/macosx/csp_malloc.c	/^void * csp_malloc(size_t size) {$/;"	f
+csp_malloc	arch/posix/csp_malloc.c	/^void * csp_malloc(size_t size) {$/;"	f
+csp_malloc	arch/windows/csp_malloc.c	/^void * csp_malloc(size_t size) {$/;"	f
+csp_memfree	csp_services.c	/^void csp_memfree(uint8_t node, uint32_t timeout) {$/;"	f
+csp_model	csp_io.c	/^static char * csp_model = NULL;$/;"	v	file:
+csp_mutex_create	arch/freertos/csp_semaphore.c	/^int csp_mutex_create(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_create	arch/macosx/csp_semaphore.c	/^int csp_mutex_create(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_create	arch/posix/csp_semaphore.c	/^int csp_mutex_create(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_create	arch/windows/csp_semaphore.c	/^int csp_mutex_create(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_lock	arch/freertos/csp_semaphore.c	/^int csp_mutex_lock(csp_mutex_t * mutex, uint32_t timeout) {$/;"	f
+csp_mutex_lock	arch/macosx/csp_semaphore.c	/^int csp_mutex_lock(csp_mutex_t * mutex, uint32_t timeout) {$/;"	f
+csp_mutex_lock	arch/posix/csp_semaphore.c	/^int csp_mutex_lock(csp_mutex_t * mutex, uint32_t timeout) {$/;"	f
+csp_mutex_lock	arch/windows/csp_semaphore.c	/^int csp_mutex_lock(csp_mutex_t * mutex, uint32_t timeout) {$/;"	f
+csp_mutex_remove	arch/freertos/csp_semaphore.c	/^int csp_mutex_remove(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_remove	arch/macosx/csp_semaphore.c	/^int csp_mutex_remove(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_remove	arch/posix/csp_semaphore.c	/^int csp_mutex_remove(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_remove	arch/windows/csp_semaphore.c	/^int csp_mutex_remove(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_unlock	arch/freertos/csp_semaphore.c	/^int csp_mutex_unlock(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_unlock	arch/macosx/csp_semaphore.c	/^int csp_mutex_unlock(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_unlock	arch/posix/csp_semaphore.c	/^int csp_mutex_unlock(csp_mutex_t * mutex) {$/;"	f
+csp_mutex_unlock	arch/windows/csp_semaphore.c	/^int csp_mutex_unlock(csp_mutex_t * mutex) {$/;"	f
+csp_new_packet	csp_route.c	/^void csp_new_packet(csp_packet_t * packet, csp_iface_t * interface, CSP_BASE_TYPE * pxTaskWoken) {$/;"	f
+csp_ntoh16	csp_endian.c	/^inline uint16_t __attribute__ ((__const__)) csp_ntoh16(uint16_t n16) {$/;"	f
+csp_ntoh32	csp_endian.c	/^inline uint32_t __attribute__ ((__const__)) csp_ntoh32(uint32_t n32) {$/;"	f
+csp_ntoh64	csp_endian.c	/^inline uint64_t __attribute__ ((__const__)) csp_ntoh64(uint64_t n64) {$/;"	f
+csp_ping	csp_services.c	/^int csp_ping(uint8_t node, uint32_t timeout, unsigned int size, uint8_t conn_options) {$/;"	f
+csp_ping_noreply	csp_services.c	/^void csp_ping_noreply(uint8_t node) {$/;"	f
+csp_port_get_socket	csp_port.c	/^csp_socket_t * csp_port_get_socket(unsigned int port) {$/;"	f
+csp_port_init	csp_port.c	/^int csp_port_init(void) {$/;"	f
+csp_port_state_t	csp_port.h	/^} csp_port_state_t;$/;"	t	typeref:enum:__anon3
+csp_port_t	csp_port.h	/^} csp_port_t;$/;"	t	typeref:struct:__anon4
+csp_promisc_add	csp_route.c	/^void csp_promisc_add(csp_packet_t * packet, csp_queue_handle_t queue) {$/;"	f
+csp_promisc_disable	csp_route.c	/^void csp_promisc_disable(void) {$/;"	f
+csp_promisc_enable	csp_route.c	/^int csp_promisc_enable(unsigned int buf_size) {$/;"	f
+csp_promisc_enabled	csp_route.c	/^int csp_promisc_enabled = 0;$/;"	v
+csp_promisc_queue	csp_route.c	/^csp_queue_handle_t csp_promisc_queue = NULL;$/;"	v
+csp_promisc_read	csp_route.c	/^csp_packet_t * csp_promisc_read(uint32_t timeout) {$/;"	f
+csp_ps	csp_services.c	/^void csp_ps(uint8_t node, uint32_t timeout) {$/;"	f
+csp_queue_create	arch/freertos/csp_queue.c	/^csp_queue_handle_t csp_queue_create(int length, size_t item_size) {$/;"	f
+csp_queue_create	arch/macosx/csp_queue.c	/^csp_queue_handle_t csp_queue_create(int length, size_t item_size) {$/;"	f
+csp_queue_create	arch/posix/csp_queue.c	/^csp_queue_handle_t csp_queue_create(int length, size_t item_size) {$/;"	f
+csp_queue_create	arch/windows/csp_queue.c	/^csp_queue_handle_t csp_queue_create(int length, size_t item_size) {$/;"	f
+csp_queue_dequeue	arch/freertos/csp_queue.c	/^int csp_queue_dequeue(csp_queue_handle_t handle, void * buf, uint32_t timeout) {$/;"	f
+csp_queue_dequeue	arch/macosx/csp_queue.c	/^int csp_queue_dequeue(csp_queue_handle_t handle, void *buf, uint32_t timeout) {$/;"	f
+csp_queue_dequeue	arch/posix/csp_queue.c	/^int csp_queue_dequeue(csp_queue_handle_t handle, void *buf, uint32_t timeout) {$/;"	f
+csp_queue_dequeue	arch/windows/csp_queue.c	/^int csp_queue_dequeue(csp_queue_handle_t handle, void *buf, uint32_t timeout) {$/;"	f
+csp_queue_dequeue_isr	arch/freertos/csp_queue.c	/^int csp_queue_dequeue_isr(csp_queue_handle_t handle, void * buf, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_dequeue_isr	arch/macosx/csp_queue.c	/^int csp_queue_dequeue_isr(csp_queue_handle_t handle, void *buf, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_dequeue_isr	arch/posix/csp_queue.c	/^int csp_queue_dequeue_isr(csp_queue_handle_t handle, void *buf, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_dequeue_isr	arch/windows/csp_queue.c	/^int csp_queue_dequeue_isr(csp_queue_handle_t handle, void * buf, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_enqueue	arch/freertos/csp_queue.c	/^int csp_queue_enqueue(csp_queue_handle_t handle, void * value, uint32_t timeout) {$/;"	f
+csp_queue_enqueue	arch/macosx/csp_queue.c	/^int csp_queue_enqueue(csp_queue_handle_t handle, void *value, uint32_t timeout) {$/;"	f
+csp_queue_enqueue	arch/posix/csp_queue.c	/^int csp_queue_enqueue(csp_queue_handle_t handle, void *value, uint32_t timeout) {$/;"	f
+csp_queue_enqueue	arch/windows/csp_queue.c	/^int csp_queue_enqueue(csp_queue_handle_t handle, void *value, uint32_t timeout) {$/;"	f
+csp_queue_enqueue_isr	arch/freertos/csp_queue.c	/^int csp_queue_enqueue_isr(csp_queue_handle_t handle, void * value, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_enqueue_isr	arch/macosx/csp_queue.c	/^int csp_queue_enqueue_isr(csp_queue_handle_t handle, void * value, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_enqueue_isr	arch/posix/csp_queue.c	/^int csp_queue_enqueue_isr(csp_queue_handle_t handle, void * value, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_enqueue_isr	arch/windows/csp_queue.c	/^int csp_queue_enqueue_isr(csp_queue_handle_t handle, void * value, CSP_BASE_TYPE * task_woken) {$/;"	f
+csp_queue_remove	arch/freertos/csp_queue.c	/^void csp_queue_remove(csp_queue_handle_t queue) {$/;"	f
+csp_queue_remove	arch/macosx/csp_queue.c	/^void csp_queue_remove(csp_queue_handle_t queue) {$/;"	f
+csp_queue_remove	arch/posix/csp_queue.c	/^void csp_queue_remove(csp_queue_handle_t queue) {$/;"	f
+csp_queue_remove	arch/windows/csp_queue.c	/^void csp_queue_remove(csp_queue_handle_t queue) {$/;"	f
+csp_queue_size	arch/freertos/csp_queue.c	/^int csp_queue_size(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size	arch/macosx/csp_queue.c	/^int csp_queue_size(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size	arch/posix/csp_queue.c	/^int csp_queue_size(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size	arch/windows/csp_queue.c	/^int csp_queue_size(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size_isr	arch/freertos/csp_queue.c	/^int csp_queue_size_isr(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size_isr	arch/macosx/csp_queue.c	/^int csp_queue_size_isr(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size_isr	arch/posix/csp_queue.c	/^int csp_queue_size_isr(csp_queue_handle_t handle) {$/;"	f
+csp_queue_size_isr	arch/windows/csp_queue.c	/^int csp_queue_size_isr(csp_queue_handle_t handle) {$/;"	f
+csp_rdp_ack_delay_count	transport/csp_rdp.c	/^static uint32_t csp_rdp_ack_delay_count = 4 \/ 2;$/;"	v	file:
+csp_rdp_ack_timeout	transport/csp_rdp.c	/^static uint32_t csp_rdp_ack_timeout = 1000 \/ 4;$/;"	v	file:
+csp_rdp_allocate	transport/csp_rdp.c	/^int csp_rdp_allocate(csp_conn_t * conn) {$/;"	f
+csp_rdp_check_ack	transport/csp_rdp.c	/^int csp_rdp_check_ack(csp_conn_t * conn) {$/;"	f
+csp_rdp_check_timeouts	transport/csp_rdp.c	/^void csp_rdp_check_timeouts(csp_conn_t * conn) {$/;"	f
+csp_rdp_close	transport/csp_rdp.c	/^int csp_rdp_close(csp_conn_t * conn) {$/;"	f
+csp_rdp_conn_print	transport/csp_rdp.c	/^void csp_rdp_conn_print(csp_conn_t * conn) {$/;"	f
+csp_rdp_conn_timeout	transport/csp_rdp.c	/^static uint32_t csp_rdp_conn_timeout = 10000;$/;"	v	file:
+csp_rdp_connect	transport/csp_rdp.c	/^int csp_rdp_connect(csp_conn_t * conn, uint32_t timeout) {$/;"	f
+csp_rdp_delayed_acks	transport/csp_rdp.c	/^static uint32_t csp_rdp_delayed_acks = 1;$/;"	v	file:
+csp_rdp_flush_all	transport/csp_rdp.c	/^void csp_rdp_flush_all(csp_conn_t * conn) {$/;"	f
+csp_rdp_flush_eack	transport/csp_rdp.c	/^static void csp_rdp_flush_eack(csp_conn_t * conn, csp_packet_t * eack_packet) {$/;"	f	file:
+csp_rdp_get_opt	transport/csp_rdp.c	/^void csp_rdp_get_opt(unsigned int * window_size, unsigned int * conn_timeout_ms,$/;"	f
+csp_rdp_header_add	transport/csp_rdp.c	/^static rdp_header_t * csp_rdp_header_add(csp_packet_t * packet) {$/;"	f	file:
+csp_rdp_header_ref	transport/csp_rdp.c	/^static rdp_header_t * csp_rdp_header_ref(csp_packet_t * packet) {$/;"	f	file:
+csp_rdp_header_remove	transport/csp_rdp.c	/^static rdp_header_t * csp_rdp_header_remove(csp_packet_t * packet) {$/;"	f	file:
+csp_rdp_new_packet	transport/csp_rdp.c	/^void csp_rdp_new_packet(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f
+csp_rdp_packet_timeout	transport/csp_rdp.c	/^static uint32_t csp_rdp_packet_timeout = 1000;$/;"	v	file:
+csp_rdp_receive_data	transport/csp_rdp.c	/^static inline int csp_rdp_receive_data(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f	file:
+csp_rdp_rx_queue_add	transport/csp_rdp.c	/^static inline int csp_rdp_rx_queue_add(csp_conn_t * conn, csp_packet_t * packet, uint16_t seq_nr) {$/;"	f	file:
+csp_rdp_rx_queue_flush	transport/csp_rdp.c	/^static inline void csp_rdp_rx_queue_flush(csp_conn_t * conn) {$/;"	f	file:
+csp_rdp_send	transport/csp_rdp.c	/^int csp_rdp_send(csp_conn_t * conn, csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_rdp_send_cmp	transport/csp_rdp.c	/^static int csp_rdp_send_cmp(csp_conn_t * conn, csp_packet_t * packet, int flags, int seq_nr, int ack_nr) {$/;"	f	file:
+csp_rdp_send_eack	transport/csp_rdp.c	/^static int csp_rdp_send_eack(csp_conn_t * conn) {$/;"	f	file:
+csp_rdp_send_syn	transport/csp_rdp.c	/^static int csp_rdp_send_syn(csp_conn_t * conn) {$/;"	f	file:
+csp_rdp_seq_after	transport/csp_rdp.c	/^static inline int csp_rdp_seq_after(uint16_t seq, uint16_t cmp) {$/;"	f	file:
+csp_rdp_seq_before	transport/csp_rdp.c	/^static inline int csp_rdp_seq_before(uint16_t seq, uint16_t cmp) {$/;"	f	file:
+csp_rdp_seq_between	transport/csp_rdp.c	/^static inline int csp_rdp_seq_between(uint16_t seq, uint16_t start, uint16_t end) {$/;"	f	file:
+csp_rdp_seq_in_rx_queue	transport/csp_rdp.c	/^static inline bool csp_rdp_seq_in_rx_queue(csp_conn_t * conn, uint16_t seq_nr) {$/;"	f	file:
+csp_rdp_set_opt	transport/csp_rdp.c	/^void csp_rdp_set_opt(unsigned int window_size, unsigned int conn_timeout_ms,$/;"	f
+csp_rdp_should_ack	transport/csp_rdp.c	/^static inline bool csp_rdp_should_ack(csp_conn_t * conn) {$/;"	f	file:
+csp_rdp_state_t	csp_conn.h	/^} csp_rdp_state_t;$/;"	t	typeref:enum:__anon7
+csp_rdp_t	csp_conn.h	/^} csp_rdp_t;$/;"	t	typeref:struct:__anon8
+csp_rdp_time_after	transport/csp_rdp.c	/^static inline int csp_rdp_time_after(uint32_t time, uint32_t cmp) {$/;"	f	file:
+csp_rdp_time_before	transport/csp_rdp.c	/^static inline int csp_rdp_time_before(uint32_t time, uint32_t cmp) {$/;"	f	file:
+csp_rdp_time_between	transport/csp_rdp.c	/^static inline int csp_rdp_time_between(uint32_t time, uint32_t start, uint32_t end) {$/;"	f	file:
+csp_rdp_window_size	transport/csp_rdp.c	/^static uint32_t csp_rdp_window_size = 4;$/;"	v	file:
+csp_read	csp_io.c	/^csp_packet_t * csp_read(csp_conn_t * conn, uint32_t timeout) {$/;"	f
+csp_reboot	csp_services.c	/^void csp_reboot(uint8_t node) {$/;"	f
+csp_recvfrom	csp_io.c	/^csp_packet_t * csp_recvfrom(csp_socket_t * socket, uint32_t timeout) {$/;"	f
+csp_route_add_if	csp_route.c	/^void csp_route_add_if(csp_iface_t *ifc) {$/;"	f
+csp_route_enqueue	csp_route.c	/^int csp_route_enqueue(csp_queue_handle_t handle, void * value, uint32_t timeout, CSP_BASE_TYPE * pxTaskWoken) {$/;"	f
+csp_route_get_fifo	csp_route.c	/^int csp_route_get_fifo(int prio) {$/;"	f
+csp_route_get_if_by_name	csp_route.c	/^csp_iface_t * csp_route_get_if_by_name(char *name) {$/;"	f
+csp_route_get_nexthop_mac	csp_route.c	/^uint8_t csp_route_get_nexthop_mac(uint8_t node) {$/;"	f
+csp_route_if	csp_route.c	/^csp_route_t * csp_route_if(uint8_t id) {$/;"	f
+csp_route_next_packet	csp_route.c	/^int csp_route_next_packet(csp_route_queue_t * input) {$/;"	f
+csp_route_print_interfaces	csp_route.c	/^void csp_route_print_interfaces(void) {$/;"	f
+csp_route_print_table	csp_route.c	/^void csp_route_print_table(void) {$/;"	f
+csp_route_queue_t	csp_route.c	/^} csp_route_queue_t;$/;"	t	typeref:struct:__anon9	file:
+csp_route_security_check	csp_route.c	/^static int csp_route_security_check(uint32_t security_opts, csp_iface_t * interface, csp_packet_t * packet) {$/;"	f	file:
+csp_route_set	csp_route.c	/^int csp_route_set(uint8_t node, csp_iface_t *ifc, uint8_t nexthop_mac_addr) {$/;"	f
+csp_route_start_task	csp_route.c	/^int csp_route_start_task(unsigned int task_stack_size, unsigned int priority) {$/;"	f
+csp_route_t	csp_route.h	/^} csp_route_t;$/;"	t	typeref:struct:__anon28
+csp_route_table_init	csp_route.c	/^int csp_route_table_init(void) {$/;"	f
+csp_route_table_load	csp_route.c	/^void csp_route_table_load(uint8_t route_table_in[CSP_ROUTE_TABLE_SIZE]) {$/;"	f
+csp_route_table_save	csp_route.c	/^void csp_route_table_save(uint8_t route_table_out[CSP_ROUTE_TABLE_SIZE]) {$/;"	f
+csp_rx_callback	interfaces/csp_if_can.c	/^int csp_rx_callback(can_frame_t *frame, CSP_BASE_TYPE *task_woken) {$/;"	f
+csp_send	csp_io.c	/^int csp_send(csp_conn_t * conn, csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_send_direct	csp_io.c	/^int csp_send_direct(csp_id_t idout, csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_send_prio	csp_io.c	/^int csp_send_prio(uint8_t prio, csp_conn_t * conn, csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_sendto	csp_io.c	/^int csp_sendto(uint8_t prio, uint8_t dest, uint8_t dport, uint8_t src_port, uint32_t opts, csp_packet_t * packet, uint32_t timeout) {$/;"	f
+csp_sendto_reply	csp_io.c	/^int csp_sendto_reply(csp_packet_t * request_packet, csp_packet_t * reply_packet, uint32_t opts, uint32_t timeout) {$/;"	f
+csp_service_handler	csp_service_handler.c	/^void csp_service_handler(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f
+csp_set_hostname	csp_io.c	/^void csp_set_hostname(char * hostname) {$/;"	f
+csp_set_model	csp_io.c	/^void csp_set_model(char * model) {$/;"	f
+csp_sha1_compress	crypto/csp_sha1.c	/^static void csp_sha1_compress(csp_sha1_state * sha1, const uint8_t * buf) {$/;"	f	file:
+csp_sha1_done	crypto/csp_sha1.c	/^void csp_sha1_done(csp_sha1_state * sha1, uint8_t * out) {$/;"	f
+csp_sha1_init	crypto/csp_sha1.c	/^void csp_sha1_init(csp_sha1_state * sha1) {$/;"	f
+csp_sha1_memory	crypto/csp_sha1.c	/^void csp_sha1_memory(const uint8_t * msg, uint32_t len, uint8_t * hash) {$/;"	f
+csp_sha1_process	crypto/csp_sha1.c	/^void csp_sha1_process(csp_sha1_state * sha1, const uint8_t * in, uint32_t inlen) {$/;"	f
+csp_sha1_state	crypto/csp_sha1.h	/^} csp_sha1_state;$/;"	t	typeref:struct:__anon10
+csp_socket	csp_io.c	/^csp_socket_t * csp_socket(uint32_t opts) {$/;"	f
+csp_sys_memfree	arch/freertos/csp_system.c	/^uint32_t csp_sys_memfree(void) {$/;"	f
+csp_sys_memfree	arch/macosx/csp_system.c	/^uint32_t csp_sys_memfree(void) {$/;"	f
+csp_sys_memfree	arch/posix/csp_system.c	/^uint32_t csp_sys_memfree(void) {$/;"	f
+csp_sys_memfree	arch/windows/csp_system.c	/^uint32_t csp_sys_memfree(void) {$/;"	f
+csp_sys_reboot	arch/freertos/csp_system.c	/^int csp_sys_reboot(void) {$/;"	f
+csp_sys_reboot	arch/macosx/csp_system.c	/^int csp_sys_reboot(void) {$/;"	f
+csp_sys_reboot	arch/posix/csp_system.c	/^int csp_sys_reboot(void) {$/;"	f
+csp_sys_reboot	arch/windows/csp_system.c	/^int csp_sys_reboot(void) {$/;"	f
+csp_sys_set_color	arch/freertos/csp_system.c	/^void csp_sys_set_color(csp_color_t color) {$/;"	f
+csp_sys_set_color	arch/macosx/csp_system.c	/^void csp_sys_set_color(csp_color_t color) {$/;"	f
+csp_sys_set_color	arch/posix/csp_system.c	/^void csp_sys_set_color(csp_color_t color) {$/;"	f
+csp_sys_set_color	arch/windows/csp_system.c	/^void csp_sys_set_color(csp_color_t color) {$/;"	f
+csp_sys_tasklist	arch/freertos/csp_system.c	/^int csp_sys_tasklist(char * out) {$/;"	f
+csp_sys_tasklist	arch/macosx/csp_system.c	/^int csp_sys_tasklist(char * out) {$/;"	f
+csp_sys_tasklist	arch/posix/csp_system.c	/^int csp_sys_tasklist(char * out) {$/;"	f
+csp_sys_tasklist	arch/windows/csp_system.c	/^int csp_sys_tasklist(char * out) {$/;"	f
+csp_thread_create	arch/freertos/csp_thread.c	/^int csp_thread_create(csp_thread_return_t (* routine)(void *), const signed char * const thread_name, unsigned short stack_depth, void * parameters, unsigned int priority, csp_thread_handle_t * handle) {$/;"	f
+csp_thread_create	arch/macosx/csp_thread.c	/^int csp_thread_create(csp_thread_return_t (* routine)(void *), const signed char * const thread_name, unsigned short stack_depth, void * parameters, unsigned int priority, csp_thread_handle_t * handle) {$/;"	f
+csp_thread_create	arch/posix/csp_thread.c	/^int csp_thread_create(csp_thread_return_t (* routine)(void *), const signed char * const thread_name, unsigned short stack_depth, void * parameters, unsigned int priority, csp_thread_handle_t * handle) {$/;"	f
+csp_thread_create	arch/windows/csp_thread.c	/^int csp_thread_create(csp_thread_return_t (* routine)(void *)__attribute__((stdcall)), const signed char * const thread_name, unsigned short stack_depth, void * parameters, unsigned int priority, csp_thread_handle_t * handle) {$/;"	f
+csp_transaction	csp_io.c	/^int csp_transaction(uint8_t prio, uint8_t dest, uint8_t port, uint32_t timeout, void * outbuf, int outlen, void * inbuf, int inlen) {$/;"	f
+csp_transaction_persistent	csp_io.c	/^int csp_transaction_persistent(csp_conn_t * conn, uint32_t timeout, void * outbuf, int outlen, void * inbuf, int inlen) {$/;"	f
+csp_tx_callback	interfaces/csp_if_can.c	/^int csp_tx_callback(can_id_t canid, can_error_t error, CSP_BASE_TYPE *task_woken) {$/;"	f
+csp_udp_new_packet	transport/csp_udp.c	/^void csp_udp_new_packet(csp_conn_t * conn, csp_packet_t * packet) {$/;"	f
+csp_uptime	csp_services.c	/^void csp_uptime(uint8_t node, uint32_t timeout) {$/;"	f
+csp_xtea_decrypt	crypto/csp_xtea.c	/^int csp_xtea_decrypt(uint8_t * cipher, const uint32_t len, uint32_t iv[2]) {$/;"	f
+csp_xtea_encrypt	crypto/csp_xtea.c	/^int csp_xtea_encrypt(uint8_t * plain, const uint32_t len, uint32_t iv[2]) {$/;"	f
+csp_xtea_encrypt_block	crypto/csp_xtea.c	/^static inline void csp_xtea_encrypt_block(uint8_t *block, uint8_t const *key) {$/;"	f	file:
+csp_xtea_key	crypto/csp_xtea.c	/^static uint32_t csp_xtea_key[XTEA_KEY_LENGTH\/sizeof(uint32_t)] __attribute__ ((aligned(sizeof(uint32_t))));$/;"	v	file:
+csp_xtea_set_key	crypto/csp_xtea.c	/^int csp_xtea_set_key(char * key, uint32_t keylen) {$/;"	f
+csp_xtea_xor_byte	crypto/csp_xtea.c	/^static inline void csp_xtea_xor_byte(uint8_t * dst, uint8_t * src, uint32_t len) {$/;"	f	file:
+curlen	crypto/csp_sha1.h	/^	uint32_t state[5], curlen;$/;"	m	struct:__anon10
+data	drivers/can/can.h	/^		uint8_t data[8];$/;"	m	union:__anon23::__anon24
+data	transport/csp_rdp.c	/^	uint8_t data[];				\/\/ This just points to the rest of the buffer, without a size indication.$/;"	m	struct:__anon12	file:
+data16	drivers/can/can.h	/^		uint16_t data16[4];$/;"	m	union:__anon23::__anon24
+data32	drivers/can/can.h	/^		uint32_t data32[2];$/;"	m	union:__anon23::__anon24
+delayed_acks	csp_conn.h	/^	uint32_t delayed_acks;$/;"	m	struct:__anon8
+dlc	drivers/can/can.h	/^	uint8_t dlc;$/;"	m	struct:__anon23
+do_cmp_ident	csp_service_handler.c	/^static int do_cmp_ident(struct csp_cmp_message *cmp) {$/;"	f	file:
+do_cmp_if_stats	csp_service_handler.c	/^static int do_cmp_if_stats(struct csp_cmp_message *cmp) {$/;"	f	file:
+do_cmp_peek	csp_service_handler.c	/^static int do_cmp_peek(struct csp_cmp_message *cmp) {$/;"	f	file:
+do_cmp_poke	csp_service_handler.c	/^static int do_cmp_poke(struct csp_cmp_message *cmp) {$/;"	f	file:
+do_cmp_route_set	csp_service_handler.c	/^static int do_cmp_route_set(struct csp_cmp_message *cmp) {$/;"	f	file:
+do_csp_debug	csp_debug.c	/^void do_csp_debug(csp_debug_level_t level, const char * format, ...) {$/;"	f
+eak	transport/csp_rdp.c	/^			unsigned int eak : 1;$/;"	m	struct:__anon13::__anon14::__anon15	file:
+fd	drivers/usart/usart_linux.c	/^int fd;$/;"	v
+flags	transport/csp_rdp.c	/^		uint8_t flags;$/;"	m	union:__anon13::__anon14	file:
+frame	drivers/can/can_socketcan.c	/^	struct can_frame frame;	\/** CAN Frame *\/$/;"	m	struct:__anon22	typeref:struct:__anon22::can_frame	file:
+getbaud	drivers/usart/usart_linux.c	/^int getbaud(int fd) {$/;"	f
+handle_router	csp_route.c	/^static csp_thread_handle_t handle_router;$/;"	v	file:
+head_idx	arch/windows/windows_queue.h	/^    int head_idx;$/;"	m	struct:windows_queue_s
+hmac_state	crypto/csp_hmac.c	/^} hmac_state;$/;"	t	typeref:struct:__anon11	file:
+id	drivers/can/can.h	/^	can_id_t id;$/;"	m	struct:__anon23
+id	transport/csp_rdp.c	/^	csp_id_t id;				\/\/ CSP id must be just before data$/;"	m	struct:__anon12	file:
+id_get	interfaces/csp_if_can.c	/^static int id_get(void) {$/;"	f	file:
+id_init	interfaces/csp_if_can.c	/^static int id_init(void) {$/;"	f	file:
+id_sem	interfaces/csp_if_can.c	/^static csp_bin_sem_handle_t id_sem;$/;"	v	file:
+idin	csp_conn.h	/^	csp_id_t idin;				  	\/* Identifier received *\/$/;"	m	struct:csp_conn_s
+idout	csp_conn.h	/^	csp_id_t idout;				 	\/* Identifier transmitted *\/$/;"	m	struct:csp_conn_s
+in	arch/macosx/pthread_queue.h	/^	int in;$/;"	m	struct:pthread_queue_s
+in	arch/posix/pthread_queue.h	/^	int in;$/;"	m	struct:pthread_queue_s
+interface	arch/windows/windows_glue.h	5;"	d
+interface	arch/windows/windows_queue.h	10;"	d
+interface	csp_route.c	/^	csp_iface_t * interface;$/;"	m	struct:__anon9	file:
+interface	csp_route.h	/^	csp_iface_t * interface;$/;"	m	struct:__anon28
+interfaces	csp_route.c	/^static csp_iface_t * interfaces;$/;"	v	file:
+isListening	drivers/usart/usart_windows.c	/^static LONG isListening = 0;$/;"	v	file:
+is_rx_mailbox	drivers/can/can_at91sam7a3.c	51;"	d	file:
+is_tx_mailbox	drivers/can/can_at91sam7a3.c	50;"	d	file:
+item_size	arch/macosx/pthread_queue.h	/^	int item_size;$/;"	m	struct:pthread_queue_s
+item_size	arch/posix/pthread_queue.h	/^	int item_size;$/;"	m	struct:pthread_queue_s
+item_size	arch/windows/windows_queue.h	/^    int item_size;$/;"	m	struct:windows_queue_s
+items	arch/macosx/pthread_queue.h	/^	int items;$/;"	m	struct:pthread_queue_s
+items	arch/posix/pthread_queue.h	/^	int items;$/;"	m	struct:pthread_queue_s
+items	arch/windows/windows_queue.h	/^    int items;$/;"	m	struct:windows_queue_s
+key	crypto/csp_hmac.c	/^	uint8_t		key[SHA1_BLOCKSIZE];$/;"	m	struct:__anon11	file:
+kiss_crc	interfaces/csp_if_kiss.c	/^static uint32_t kiss_crc(unsigned char *block, unsigned int length) {$/;"	f	file:
+kiss_discard	interfaces/csp_if_kiss.c	/^static csp_kiss_discard_f kiss_discard;$/;"	v	file:
+kiss_putstr	interfaces/csp_if_kiss.c	/^static csp_kiss_putstr_f kiss_putstr;$/;"	v	file:
+last_used	interfaces/csp_if_can.c	/^	uint32_t last_used;				\/**< Timestamp in ms for last use of buffer *\/$/;"	m	struct:__anon2	file:
+length	crypto/csp_sha1.h	/^	uint64_t length;$/;"	m	struct:__anon10
+length	transport/csp_rdp.c	/^	uint16_t length;			\/\/ Length field must be just before CSP ID$/;"	m	struct:__anon12	file:
+lock	csp_conn.h	/^	csp_mutex_t lock;				\/* Connection structure lock *\/$/;"	m	struct:csp_conn_s
+mbox	drivers/can/can_at90can128.c	/^static mbox_t mbox[CAN_TX_MOBS];$/;"	v	file:
+mbox	drivers/can/can_at91sam7a1.c	/^static mbox_t mbox[CAN_TX_MBOX];$/;"	v	file:
+mbox	drivers/can/can_at91sam7a3.c	/^static mbox_t mbox[CAN_TX_MBOX];$/;"	v	file:
+mbox	drivers/can/can_socketcan.c	/^static mbox_t mbox[MBOX_NUM];$/;"	v	file:
+mbox_rx_thread	drivers/can/can_socketcan.c	/^static void * mbox_rx_thread(void * parameters) {$/;"	f	file:
+mbox_sem	drivers/can/can_socketcan.c	/^sem_t mbox_sem;	\/** Mailbox pool semaphore *\/$/;"	v
+mbox_state_t	drivers/can/can_socketcan.c	/^} mbox_state_t;$/;"	t	typeref:enum:__anon21	file:
+mbox_t	drivers/can/can_at90can128.c	/^} mbox_t;$/;"	t	typeref:enum:__anon16	file:
+mbox_t	drivers/can/can_at91sam7a1.c	/^} mbox_t;$/;"	t	typeref:enum:__anon17	file:
+mbox_t	drivers/can/can_at91sam7a3.c	/^} mbox_t;$/;"	t	typeref:enum:__anon18	file:
+mbox_t	drivers/can/can_socketcan.c	/^} mbox_t;$/;"	t	typeref:struct:__anon22	file:
+mbox_tx_thread	drivers/can/can_socketcan.c	/^static void * mbox_tx_thread(void * parameters) {$/;"	f	file:
+md	crypto/csp_hmac.c	/^	csp_sha1_state	md;$/;"	m	struct:__anon11	file:
+mutex	arch/macosx/pthread_queue.h	/^	pthread_mutex_t mutex;$/;"	m	struct:pthread_queue_s
+mutex	arch/posix/pthread_queue.h	/^	pthread_mutex_t mutex;$/;"	m	struct:pthread_queue_s
+mutex	arch/windows/windows_queue.h	/^    CRITICAL_SECTION mutex;$/;"	m	struct:windows_queue_s
+my_address	csp_io.c	/^unsigned char my_address;$/;"	v
+nexthop_mac_addr	csp_route.h	/^	uint8_t nexthop_mac_addr;$/;"	m	struct:__anon28
+opts	csp_conn.h	/^	uint32_t opts;					\/* Connection or socket options *\/$/;"	m	struct:csp_conn_s
+out	arch/macosx/pthread_queue.h	/^	int out;$/;"	m	struct:pthread_queue_s
+out	arch/posix/pthread_queue.h	/^	int out;$/;"	m	struct:pthread_queue_s
+packet	csp_route.c	/^	csp_packet_t * packet;$/;"	m	struct:__anon9	file:
+packet	interfaces/csp_if_can.c	/^	csp_packet_t *packet;			\/**< Pointer to packet buffer *\/$/;"	m	struct:__anon2	file:
+packet_timeout	csp_conn.h	/^	uint32_t packet_timeout;$/;"	m	struct:__anon8
+padding	transport/csp_rdp.c	/^	uint8_t padding[CSP_PADDING_BYTES - 2 * sizeof(uint32_t)];$/;"	m	struct:__anon12	file:
+pbuf	interfaces/csp_if_can.c	/^static pbuf_element_t pbuf[PBUF_ELEMENTS];$/;"	v	file:
+pbuf_cleanup	interfaces/csp_if_can.c	/^static void pbuf_cleanup(void) {$/;"	f	file:
+pbuf_element_t	interfaces/csp_if_can.c	/^} pbuf_element_t;$/;"	t	typeref:struct:__anon2	file:
+pbuf_find	interfaces/csp_if_can.c	/^static pbuf_element_t *pbuf_find(uint32_t id, uint32_t mask, CSP_BASE_TYPE *task_woken) {$/;"	f	file:
+pbuf_free	interfaces/csp_if_can.c	/^static int pbuf_free(pbuf_element_t *buf, CSP_BASE_TYPE *task_woken) {$/;"	f	file:
+pbuf_init	interfaces/csp_if_can.c	/^static int pbuf_init(void) {$/;"	f	file:
+pbuf_new	interfaces/csp_if_can.c	/^static pbuf_element_t *pbuf_new(uint32_t id, CSP_BASE_TYPE *task_woken) {$/;"	f	file:
+pbuf_sem	interfaces/csp_if_can.c	/^CSP_DEFINE_CRITICAL(pbuf_sem);$/;"	v
+pbuf_state_t	interfaces/csp_if_can.c	/^} pbuf_state_t;$/;"	t	typeref:enum:__anon1	file:
+pbuf_timestamp	interfaces/csp_if_can.c	/^int pbuf_timestamp(pbuf_element_t *buf, CSP_BASE_TYPE *task_woken) {$/;"	f
+pdTrue	transport/csp_rdp.c	/^static CSP_BASE_TYPE pdTrue = 1;$/;"	v	file:
+pins_can_transceiver_rxd	drivers/can/can_at91sam7a3.c	/^static const Pin pins_can_transceiver_rxd[] = {PIN_CAN_RX};$/;"	v	file:
+pins_can_transceiver_txd	drivers/can/can_at91sam7a3.c	/^static const Pin pins_can_transceiver_txd[] = {PIN_CAN_TX};$/;"	v	file:
+portHandle	drivers/usart/usart_windows.c	/^static HANDLE portHandle = INVALID_HANDLE_VALUE;$/;"	v	file:
+ports	csp_port.c	/^static csp_port_t ports[CSP_MAX_BIND_PORT + 2];$/;"	v	file:
+printError	drivers/usart/usart_windows.c	45;"	d	file:
+printError	drivers/usart/usart_windows.c	47;"	d	file:
+prvParityToStr	drivers/usart/usart_windows.c	/^static const char* prvParityToStr(BYTE paritySetting) {$/;"	f	file:
+prvPrintError	drivers/usart/usart_windows.c	/^static void prvPrintError(void) {$/;"	f	file:
+prvRxTask	drivers/usart/usart_windows.c	/^unsigned WINAPI prvRxTask(void* params) {$/;"	f
+prvSendData	drivers/usart/usart_windows.c	/^static void prvSendData(char *buf, int bufsz) {$/;"	f	file:
+prvTryConfigurePort	drivers/usart/usart_windows.c	/^static int prvTryConfigurePort(const struct usart_conf * conf) {$/;"	f	file:
+prvTryOpenPort	drivers/usart/usart_windows.c	/^static int prvTryOpenPort(const char *intf) {$/;"	f	file:
+prvTrySetPortTimeouts	drivers/usart/usart_windows.c	/^static int prvTrySetPortTimeouts(void) {$/;"	f	file:
+pthread_queue_create	arch/macosx/pthread_queue.c	/^pthread_queue_t * pthread_queue_create(int length, size_t item_size) {$/;"	f
+pthread_queue_create	arch/posix/pthread_queue.c	/^pthread_queue_t * pthread_queue_create(int length, size_t item_size) {$/;"	f
+pthread_queue_delete	arch/macosx/pthread_queue.c	/^void pthread_queue_delete(pthread_queue_t * q) {$/;"	f
+pthread_queue_delete	arch/posix/pthread_queue.c	/^void pthread_queue_delete(pthread_queue_t * q) {$/;"	f
+pthread_queue_dequeue	arch/macosx/pthread_queue.c	/^int pthread_queue_dequeue(pthread_queue_t * queue, void * buf, uint32_t timeout) {$/;"	f
+pthread_queue_dequeue	arch/posix/pthread_queue.c	/^int pthread_queue_dequeue(pthread_queue_t * queue, void * buf, uint32_t timeout) {$/;"	f
+pthread_queue_enqueue	arch/macosx/pthread_queue.c	/^int pthread_queue_enqueue(pthread_queue_t * queue, void * value, uint32_t timeout) {$/;"	f
+pthread_queue_enqueue	arch/posix/pthread_queue.c	/^int pthread_queue_enqueue(pthread_queue_t * queue, void * value, uint32_t timeout) {$/;"	f
+pthread_queue_items	arch/macosx/pthread_queue.c	/^int pthread_queue_items(pthread_queue_t * queue) {$/;"	f
+pthread_queue_items	arch/posix/pthread_queue.c	/^int pthread_queue_items(pthread_queue_t * queue) {$/;"	f
+pthread_queue_s	arch/macosx/pthread_queue.h	/^typedef struct pthread_queue_s {$/;"	s
+pthread_queue_s	arch/posix/pthread_queue.h	/^typedef struct pthread_queue_s {$/;"	s
+pthread_queue_t	arch/macosx/pthread_queue.h	/^} pthread_queue_t;$/;"	t	typeref:struct:pthread_queue_s
+pthread_queue_t	arch/posix/pthread_queue.h	/^} pthread_queue_t;$/;"	t	typeref:struct:pthread_queue_s
+quarantine	transport/csp_rdp.c	/^	uint32_t quarantine; 		\/\/ EACK quarantine period$/;"	m	struct:__anon12	file:
+queueEmpty	arch/windows/windows_queue.c	/^static int queueEmpty(windows_queue_t * queue) {$/;"	f	file:
+queueFull	arch/windows/windows_queue.c	/^static int queueFull(windows_queue_t * queue) {$/;"	f	file:
+rcv_cur	csp_conn.h	/^	uint16_t rcv_cur; 					\/**< The sequence number of the last segment received correctly and in sequence *\/$/;"	m	struct:__anon8
+rcv_irs	csp_conn.h	/^	uint16_t rcv_irs; 					\/**< The initial receive sequence number *\/$/;"	m	struct:__anon8
+rcv_lsa	csp_conn.h	/^	uint16_t rcv_lsa; 					\/**< The last sequence number acknowledged by the receiver *\/$/;"	m	struct:__anon8
+rdp	csp_conn.h	/^	csp_rdp_t rdp;					\/* RDP state *\/$/;"	m	struct:csp_conn_s
+rdp_header_t	transport/csp_rdp.c	/^} rdp_header_t;$/;"	t	typeref:struct:__anon13	file:
+rdp_packet_t	transport/csp_rdp.c	/^} rdp_packet_t;$/;"	t	typeref:struct:__anon12	file:
+remain	interfaces/csp_if_can.c	/^	uint32_t remain;				\/**< Remaining packets *\/$/;"	m	struct:__anon2	file:
+res	transport/csp_rdp.c	/^			unsigned int res : 4;$/;"	m	struct:__anon13::__anon14::__anon15	file:
+router_input_event	csp_route.c	/^static csp_queue_handle_t router_input_event;$/;"	v	file:
+router_input_fifo	csp_route.c	/^static csp_queue_handle_t router_input_fifo[CSP_ROUTE_FIFOS];$/;"	v	file:
+routes	csp_route.c	/^static csp_route_t routes[CSP_ROUTE_COUNT];$/;"	v	file:
+rst	transport/csp_rdp.c	/^			unsigned int rst : 1;$/;"	m	struct:__anon13::__anon14::__anon15	file:
+rxThread	drivers/usart/usart_windows.c	/^static HANDLE rxThread = INVALID_HANDLE_VALUE;$/;"	v	file:
+rx_count	interfaces/csp_if_can.c	/^	uint16_t rx_count;				\/**< Received bytes *\/$/;"	m	struct:__anon2	file:
+rx_event	csp_conn.h	/^	csp_queue_handle_t rx_event;	\/* Event queue for RX packets *\/$/;"	m	struct:csp_conn_s
+rx_queue	csp_conn.h	/^	csp_queue_handle_t rx_queue;$/;"	m	struct:__anon8
+rx_queue	csp_conn.h	/^	csp_queue_handle_t rx_queue[CSP_RX_QUEUES]; \/* Queue for RX packets *\/$/;"	m	struct:csp_conn_s
+rxcb	drivers/can/can_at90can128.c	/^can_rx_callback_t rxcb;$/;"	v
+rxcb	drivers/can/can_at91sam7a1.c	/^can_rx_callback_t rxcb = NULL;$/;"	v
+rxcb	drivers/can/can_at91sam7a3.c	/^can_rx_callback_t rxcb = NULL;$/;"	v
+rxcb	drivers/can/can_socketcan.c	/^can_rx_callback_t rxcb;$/;"	v
+seq_nr	transport/csp_rdp.c	/^	uint16_t seq_nr;$/;"	m	struct:__anon13	file:
+serial_rx_thread	drivers/usart/usart_linux.c	/^static void *serial_rx_thread(void *vptr_args) {$/;"	f	file:
+signal_sem	drivers/can/can_socketcan.c	/^	sem_t signal_sem;   	\/** Signalling semaphore *\/$/;"	m	struct:__anon22	file:
+size	arch/macosx/pthread_queue.h	/^	int size;$/;"	m	struct:pthread_queue_s
+size	arch/posix/pthread_queue.h	/^	int size;$/;"	m	struct:pthread_queue_s
+size	arch/windows/windows_queue.h	/^    int size;$/;"	m	struct:windows_queue_s
+size	csp_buffer.c	/^static unsigned int count, size;$/;"	v	file:
+snd_iss	csp_conn.h	/^	uint16_t snd_iss; 					\/**< The initial send sequence number *\/$/;"	m	struct:__anon8
+snd_nxt	csp_conn.h	/^	uint16_t snd_nxt; 					\/**< The sequence number of the next segment that is to be sent *\/$/;"	m	struct:__anon8
+snd_una	csp_conn.h	/^	uint16_t snd_una; 					\/**< The sequence number of the oldest unacknowledged segment *\/$/;"	m	struct:__anon8
+socket	csp_conn.h	/^	csp_queue_handle_t socket;		\/* Socket to be "woken" when first packet is ready *\/$/;"	m	struct:csp_conn_s
+socket	csp_port.h	/^	csp_socket_t * socket;		  \/\/ New connections are added to this socket's conn queue$/;"	m	struct:__anon4
+sport	csp_conn.c	/^static uint8_t sport;$/;"	v	file:
+sport_lock	csp_conn.c	/^static csp_bin_sem_handle_t sport_lock;$/;"	v	file:
+state	crypto/csp_sha1.h	/^	uint32_t state[5], curlen;$/;"	m	struct:__anon10
+state	csp_conn.h	/^	csp_conn_state_t state;		 	\/* Connection state (SOCKET_OPEN or SOCKET_CLOSED) *\/$/;"	m	struct:csp_conn_s
+state	csp_conn.h	/^	csp_rdp_state_t state;				\/**< Connection state *\/$/;"	m	struct:__anon8
+state	csp_port.h	/^	csp_port_state_t state;		 \/\/ Port state$/;"	m	struct:__anon4
+state	drivers/can/can_socketcan.c	/^	mbox_state_t state;		\/** Thread state *\/$/;"	m	struct:__anon22	file:
+state	interfaces/csp_if_can.c	/^	pbuf_state_t state;				\/**< Element state *\/$/;"	m	struct:__anon2	file:
+syn	transport/csp_rdp.c	/^			unsigned int syn : 1;$/;"	m	struct:__anon13::__anon14::__anon15	file:
+thread	drivers/can/can_socketcan.c	/^	pthread_t thread;  		\/** Thread handle *\/$/;"	m	struct:__anon22	file:
+timestamp	csp_conn.h	/^	uint32_t timestamp;				\/* Time the connection was opened *\/$/;"	m	struct:csp_conn_s
+timestamp	transport/csp_rdp.c	/^	uint32_t timestamp;			\/\/ Time the message was sent$/;"	m	struct:__anon12	file:
+txSection	drivers/usart/usart_windows.c	/^static CRITICAL_SECTION txSection;$/;"	v	file:
+tx_count	interfaces/csp_if_can.c	/^	uint16_t tx_count;				\/**< Transmitted bytes *\/$/;"	m	struct:__anon2	file:
+tx_queue	csp_conn.h	/^	csp_queue_handle_t tx_queue;$/;"	m	struct:__anon8
+tx_sem	interfaces/csp_if_can.c	/^	csp_bin_sem_handle_t tx_sem;	\/**< Transmit semaphore for blocking mode *\/$/;"	m	struct:__anon2	file:
+tx_wait	csp_conn.h	/^	csp_bin_sem_handle_t tx_wait;$/;"	m	struct:__anon8
+txcb	drivers/can/can_at90can128.c	/^can_tx_callback_t txcb;$/;"	v
+txcb	drivers/can/can_at91sam7a1.c	/^can_tx_callback_t txcb = NULL;$/;"	v
+txcb	drivers/can/can_at91sam7a3.c	/^can_tx_callback_t txcb = NULL;$/;"	v
+txcb	drivers/can/can_socketcan.c	/^can_tx_callback_t txcb;$/;"	v
+type	csp_conn.h	/^	csp_conn_type_t type;			\/* Connection type (CONN_CLIENT or CONN_SERVER) *\/$/;"	m	struct:csp_conn_s
+usart_callback	drivers/usart/usart_linux.c	/^usart_callback_t usart_callback = NULL;$/;"	v
+usart_callback	drivers/usart/usart_windows.c	/^static usart_callback_t usart_callback = NULL;$/;"	v	file:
+usart_getc	drivers/usart/usart_linux.c	/^char usart_getc(void) {$/;"	f
+usart_init	drivers/usart/usart_linux.c	/^void usart_init(struct usart_conf * conf) {$/;"	f
+usart_init	drivers/usart/usart_windows.c	/^void usart_init(struct usart_conf * conf) {$/;"	f
+usart_insert	drivers/usart/usart_linux.c	/^void usart_insert(char c, void * pxTaskWoken) {$/;"	f
+usart_insert	drivers/usart/usart_windows.c	/^void usart_insert(char c, void *pxTaskWoken) {$/;"	f
+usart_listen	drivers/usart/usart_windows.c	/^void usart_listen(void) {$/;"	f
+usart_messages_waiting	drivers/usart/usart_linux.c	/^int usart_messages_waiting(int handle) {$/;"	f
+usart_putc	drivers/usart/usart_linux.c	/^void usart_putc(char c) {$/;"	f
+usart_putstr	drivers/usart/usart_linux.c	/^void usart_putstr(char * buf, int len) {$/;"	f
+usart_putstr	drivers/usart/usart_windows.c	/^void usart_putstr(char* buf, int bufsz) {$/;"	f
+usart_set_callback	drivers/usart/usart_linux.c	/^void usart_set_callback(usart_callback_t callback) {$/;"	f
+usart_set_callback	drivers/usart/usart_windows.c	/^void usart_set_callback(usart_callback_t callback) {$/;"	f
+usart_shutdown	drivers/usart/usart_windows.c	/^void usart_shutdown(void) {$/;"	f
+window_size	csp_conn.h	/^	uint32_t window_size;$/;"	m	struct:__anon8
+windows_queue_create	arch/windows/windows_queue.c	/^windows_queue_t * windows_queue_create(int length, size_t item_size) {$/;"	f
+windows_queue_delete	arch/windows/windows_queue.c	/^void windows_queue_delete(windows_queue_t * q) {$/;"	f
+windows_queue_dequeue	arch/windows/windows_queue.c	/^int windows_queue_dequeue(windows_queue_t * queue, void * buf, int timeout) {$/;"	f
+windows_queue_enqueue	arch/windows/windows_queue.c	/^int windows_queue_enqueue(windows_queue_t * queue, void * value, int timeout) {$/;"	f
+windows_queue_items	arch/windows/windows_queue.c	/^int windows_queue_items(windows_queue_t * queue) {$/;"	f
+windows_queue_s	arch/windows/windows_queue.h	/^typedef struct windows_queue_s {$/;"	s
+windows_queue_t	arch/windows/windows_queue.h	/^} windows_queue_t;$/;"	t	typeref:struct:windows_queue_s
