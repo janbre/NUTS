@@ -1,13 +1,13 @@
-# project libcsp (1.0.1) configured on Tue Nov 27 15:06:45 2012 by
-# waf 1.6.9 (abi 98, python 20701f0 on linux2)
-# using ./waf clean configure --prefix=/home/charlie --install-csp --enable-promisc --enable-if-kiss --with-driver-usart=linux --enable-crc32 --enable-qos --enable-rdp --with-max-connections=20 --enable-hmac --enable-examples --enable-seqnr --with-os=posix --with-loglevel=info build install
+# project libcsp (1.0.1) configured on Tue Jan 28 10:08:24 2014 by
+# waf 1.6.9 (abi 98, python 20703f0 on linux2)
+# using ./waf clean configure --prefix=/home/alex/NUTSTEST/ --install-csp --enable-promisc --enable-if-kiss --with-driver-usart=linux --enable-crc32 --enable-qos --enable-rdp --with-max-connections=20 --enable-hmac --enable-examples --enable-seqnr --with-os=posix --with-loglevel=info build install
 #
 ----------------------------------------
 Setting top to
-/home/charlie/project.git/project
+/home/alex/Git/NUTS/project
 ----------------------------------------
 Setting out to
-/home/charlie/project.git/project/build
+/home/alex/Git/NUTS/project/build
 ----------------------------------------
 Checking for program gcc,cc
 gcc
@@ -37,10 +37,10 @@ int use_ebcdic (int i) {
 extern int foo;
 
 <==
-[1/2] [32mc: build/.conf_check_f8d0c69fc5437f399044f262542eead2/test.c -> build/.conf_check_f8d0c69fc5437f399044f262542eead2/testbuild/test.c.1.o
+[1/2] [32mc: build/.conf_check_5ccd614e576c385f70861e502099b5f6/test.c -> build/.conf_check_5ccd614e576c385f70861e502099b5f6/testbuild/test.c.1.o
 [0m
-['gcc', '-Os', '-Wall', '-g', '-std=gnu99', '-DGIT_REV="143309c"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_VERBOSE=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_PROMISC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_SEQNR=1', '-DCSP_CONN_MAX=20', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=10', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o', 'test.c.1.o']
-[2/2] [35mgrep_for_endianness: build/.conf_check_f8d0c69fc5437f399044f262542eead2/testbuild/test.c.1.o
+['gcc', '-Os', '-Wall', '-g', '-std=gnu99', '-DGIT_REV="390d4eb"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_VERBOSE=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_PROMISC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_SEQNR=1', '-DCSP_CONN_MAX=20', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=10', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [35mgrep_for_endianness: build/.conf_check_5ccd614e576c385f70861e502099b5f6/testbuild/test.c.1.o
 [0m
 little
 ----------------------------------------
@@ -55,7 +55,7 @@ int main() {
 <==
 [1/2] [32mc: build/.conf_check_1b24b0b3c24d53ce072660942760a09c/test.c -> build/.conf_check_1b24b0b3c24d53ce072660942760a09c/testbuild/test.c.1.o
 [0m
-['gcc', '-Os', '-Wall', '-g', '-std=gnu99', '-DGIT_REV="143309c"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_VERBOSE=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_PROMISC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_SEQNR=1', '-DCSP_CONN_MAX=20', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=10', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o', 'test.c.1.o']
+['gcc', '-Os', '-Wall', '-g', '-std=gnu99', '-DGIT_REV="390d4eb"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_VERBOSE=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_PROMISC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_SEQNR=1', '-DCSP_CONN_MAX=20', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=10', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcstlib: build/.conf_check_1b24b0b3c24d53ce072660942760a09c/testbuild/test.c.1.o -> build/.conf_check_1b24b0b3c24d53ce072660942760a09c/testbuild/libtestprog.a
 [0m
 ['ar', 'rcs', 'libtestprog.a', 'test.c.1.o']
