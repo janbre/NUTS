@@ -1,0 +1,13 @@
+*.class
+*.pyc
+*.dvi
+*.log
+*.out
+*.toc
+*.swp
+*.temp
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.gz
