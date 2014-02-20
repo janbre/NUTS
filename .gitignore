@@ -11,3 +11,5 @@
 *.bbl
 *.blg
 *.gz
+*.o
+*.conf_check*
