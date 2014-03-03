@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<link href='http://fonts.googleapis.com/css?family=Revalia|Russo+One|Audiowide|Michroma' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<meta charset="utf-8" />
+		<title>NUTS Prototype GSE</title>
+
+	</head>
+	
+	<body>
+	   <script src="script.js"></script>
+        <h1 id="GSE">GSE Prototype</h1>	
+        <div id="header">
+            <img src="img/nuts-logo.png"/>
+        </div>
+        
+        <ol id="tabs">
+            <li><a href="gse.html">Main</a></li>
+            <li class="current"><a href="send.html">Send Commands</a></li>
+            <li><a href="receive.html">Received Data</a></li>
+        </ol>
+
+        <div class="content">
+            <input id="c1" type="submit" onclick="test('Confirm Take Picture')" name="Command1" value="Take Picture"/><br/>
+            <input type="submit" onclick="myFunction()" name="Command2" value="Echo"/><br/>
+            <input type="submit" name="Command3" value="Send housekeeping"/><br/> 
+        </div>
+        
+        <div class="content" id="button">
+            <p id="bla"></p>
+        </div>
+
+	</body>
+
+</html>

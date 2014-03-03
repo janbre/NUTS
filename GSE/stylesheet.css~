@@ -1,0 +1,31 @@
+/*<link href='http://fonts.googleapis.com/css?family=Revalia|Russo+One|Audiowide|Michroma' rel='stylesheet' type='text/css'>*/
+
+body {
+/*	background-color		: #6B6767; */
+	background-color: #FFFFFF;  
+}
+
+input[type="button"], input[type="submit"] { 
+	color 								: #2FA1B6;
+ 	background-color 	: #F7F7F8;
+	cursor								: pointer; 
+ 	font										: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+ 	border								: 1px solid; 
+ 	border-color				: #696 #363 #363 #696; 
+ 	margin								: 10px;
+ 	padding								: 5px;
+} 
+
+#header {
+	position							: relative;
+	top										: 1px;
+/*	background-color		: #413D3D; */
+	background-color: #FFFFFF;
+	padding 							: 10px; 
+	}
+	
+	#GSE {
+		font-family: 'Revalia', Arial, serif; font-weight: 400;
+		float: right;
+		display: inline;
+	}
