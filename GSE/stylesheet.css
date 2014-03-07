@@ -69,6 +69,11 @@ input[type="button"], input[type="submit"] {
     font-weight         : bold;
 }
 
+#tabs li a:hover {
+    color               : #FFFFFF;
+    background          : #f5d7b4;
+}
+
 div.content {
     clear               : left;
     padding             : 1em;
@@ -78,4 +83,3 @@ div.content {
     margin:10px;
     background-color: solid black;
 }
-    

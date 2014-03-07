@@ -23,13 +23,14 @@
         </ol>
 
         <div class="content">
-            <input id="c1" type="submit" onclick="test('Confirm Take Picture')" name="Command1" value="Take Picture"/><br/>
-            <input type="submit" onclick="myFunction()" name="Command2" value="Echo"/><br/>
-            <input type="submit" name="Command3" value="Send housekeeping"/><br/> 
+            <input type="submit" onclick="confirmCommand('Take Picture')" name="Command1" value="Take Picture"/><br/>
+            <input type="submit" onclick="confirmCommand('Echo')" name="Command2" value="Echo"/><br/>
+            <input type="submit" onclick="confirmCommand('Send Housekeeping')" name="Command3" value="Send housekeeping"/><br/> 
         </div>
         
         <div class="content" id="button">
             <p id="bla"></p>
+            <input type="submit" name="input" value="Confirm" disabled/>
         </div>
 
 	</body>
