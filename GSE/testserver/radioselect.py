@@ -4,16 +4,22 @@ import time
 import thread
 import sys
 
+# different message prefixes
+prefix_HAL = 'HAL'
+prefix_welcome = 'welcome'
+prefix_help_text = 'man'
+prefix_quit = 'quit'
+
 # different messages
-HAL = '''ALL THESE WORLDS ARE YOURS EXCEPT EUROPA\nATTEMPT NO LANDING THERE\n'''
+message_HAL = '''ALL THESE WORLDS ARE YOURS EXCEPT EUROPA\nATTEMPT NO LANDING THERE\n'''
 
-welcome = 'This is your reptilian overlords, what can we help you with today?\n'
+message_welcome = 'This is your reptilian overlords, what can we help you with today?\n'
 
-help_request = 'Received request for help, transmitting hydrospanner manual'
+message_help_request = 'Received request for help, transmitting hydrospanner manual'
 
-help_text = '''Available commands:\nQuit:\tShut down connection\nHelp:\tPrints this message\nStart:\tBegin transmission\n'''
+message_help_text = '''Available commands:\nQuit:\tShut down connection\nHelp:\tPrints this message\nStart:\tBegin transmission\n'''
 
-quit = 'Good day to you, madam/sir!\n'
+message_quit = 'Good day to you, madam/sir!\n'
 
 
 # Setting up the socket stuffs
@@ -27,7 +33,7 @@ inputs = [gse_socket]
 
 def constant_transmission(thread_name, connection):
     while True:
-        connection.send(HAL * 6)
+        connection.send(prefix_HAL + (message_HAL * 6))
         time.sleep(1)
 
 while True:
@@ -37,30 +43,30 @@ while True:
             client, address = gse_socket.accept()
             print 'Got connection from ', address
             inputs.append(client)
-            client.send(welcome)
+            client.send(prefix_welcome + message_welcome)
         else:
             try:
-                data = client.recv(1024)
+                data = r.recv(1024)
                 disconnected = not data
             except socket.error:
                 disconnected = True
 
             if disconnected:
-                print client.getpeername(), 'disconnected'
+                print r.getpeername(), 'disconnected'
                 gse_socket.close()
                 sys.exit()
             else:
                 if data[:4].lower() == 'help':
-                    print help_request
-                    client.send(help_text)
+                    print message_help_request
+                    r.send(prefix_help_text + message_help_text)
                 elif data[:4].lower() == 'quit':
-                    print quit
+                    print message_quit
                     gse_socket.close()
                     sys.exit()
                 elif data[:5].lower() == 'start':
-                    thread.start_new_thread(constant_transmission, ('transmission', client))
+                    thread.start_new_thread(constant_transmission, ('transmission', r))
                 else:
-                    client.send(data)
+                    r.send(data)
 
 
 
