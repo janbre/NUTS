@@ -15,8 +15,13 @@ class Info:
     WELCOME = '''Welcome to Alien Transmission Reception INC.\nNo ongoing transmissions. Would you like to receive one? (Y/N): '''
 
     NEGATIVE = '''Apparantly, E.T doesn\'t want to phone home today'''
-    SHUT_DOWN = 'Shutting down'
+    SHUT_DOWN = 'INFO: Shutting down\n'
+    START_UP = 'INFO: GSE started\n'
 
 class Error:
-    CONNECTION = 'Unable to connect to server. Are you certain our reptillian overlords are trying to reach you?'
+    CONNECTION = 'ERROR: Unable to connect to server. Are you certain our reptillian overlords are trying to reach you?'
 
+class Reason:
+    USER_QUIT = 'REASON: User quit\n'
+    UNSUPPORTED_COMMAND = 'REASON: Unsupported command\n'
+    CONNECTION_ERROR = 'REASON: Connection Error\n'
