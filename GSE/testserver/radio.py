@@ -3,6 +3,7 @@ import select
 import time
 import thread
 import sys
+import strings
 
 # different message prefixes
 prefix_HAL = 'HAL'
@@ -57,7 +58,8 @@ while True:
                 sys.exit()
             else:
                 if data[:4] == 'help':
-                    print message_help_request
+                    #print message_help_request
+                    print strings.Message.HELP_TEXT
                     r.send(prefix_help_text + message_help_text)
                 elif data[:4] == 'quit':
                     print message_quit
