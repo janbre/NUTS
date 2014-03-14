@@ -1,5 +1,6 @@
 import socket, select
 import thread
+import sys
 
 # prefixes
 prefix_HAL = 'HAL'
@@ -62,6 +63,8 @@ while True:
     command = raw_input('Enter command: ')
     if command == 'start':
         thread.start_new_thread(receive_stream, ('transmission', command))
+    elif command.lower() == 'quit':
+       sys.exit() 
     else:
         radio_socket.send(command)
         data = radio_socket.recv(1024)
