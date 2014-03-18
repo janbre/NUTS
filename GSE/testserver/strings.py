@@ -13,7 +13,6 @@ class Message:
 
 class Info:
     WELCOME = '''Welcome to Alien Transmission Reception INC.\nNo ongoing transmissions. Would you like to receive one? (Y/N): '''
-
     NEGATIVE = '''Apparantly, E.T doesn\'t want to phone home today'''
     SHUT_DOWN = 'INFO: Shutting down\n'
     START_UP = 'INFO: GSE started\n'

@@ -1,10 +1,11 @@
-import socket, select
-import thread
-import sys
-from time import ctime
 from GSEexceptions import PrefixError
-import strings
+from time import ctime
 import os
+import select
+import socket
+import strings
+import sys
+import thread
 
 # TODO: logfile should just log errors and stuff
 #       beacon data should be logged to beacon.log
@@ -56,8 +57,11 @@ def receive_stream(name, command):
     except socket.error:
         print connection_error
     connection.send(command)
-    data = connection.recv(1024)
+    data = connection.recv(408)
     while data:
+        if not data:
+            print 'no more data'
+            break
         prefix = get_prefix(data)
         print 'prefix: ', prefix
         if prefix == strings.Prefix.HAL:
@@ -66,7 +70,7 @@ def receive_stream(name, command):
         elif prefix == strings.Prefix.QUIT:
             print 'finished'
             t = False
-        data = connection.recv(1024)
+        data = connection.recv(408)
 
 command = raw_input(strings.Info.WELCOME)
 if command.lower() == 'n':
