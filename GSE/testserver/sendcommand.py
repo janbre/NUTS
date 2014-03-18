@@ -3,18 +3,9 @@ import commands
 import messages
 import sys
 
-contact         = '0'
-get_telemetry   = '1'
-cam_take_pic    = '2'
-image_status    = '3'
-image_download  = '4'
-ping            = 'p'
-quit            = 'q'
-hilfe           = 'h'
-
 help_text = '0:\tContact\n1:\tGet telemetry\n2:\tTake picture\n3:\tRequest pic status\n4:\tRequest pic\nh:\thelp\nq:\tquit'
 
-buffer_no = 128
+buffer_no = 128 # since Python likes to ignore leading zeroes when working with binary
 
 def build_contact_command():
     # TODO
