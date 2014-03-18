@@ -4,12 +4,26 @@ import sys
 from time import ctime
 from GSEexceptions import PrefixError
 import strings
-import os
 
-# TODO: logfile should just log errors and stuff
-#       beacon data should be logged to beacon.log
-#       housekeeping data should be logged to housekeeping.log
-#       picture data should be logged to pictures
+# prefixes
+prefix_HAL = 'HAL'
+prefix_welcome = 'welcome'
+prefix_help = 'help'
+prefix_quit = 'quit'
+
+welcome = '''Welcome to Alien Transmission Reception INC.
+No ongoing transmissions. Would you like to receive one? (Y/N): '''
+
+negative = '''Apparantly, E.T doesn\'t want to phone home today.
+Closing conduit'''
+
+connection_error = '''Unable to connect to server. Are you certain our reptilian overlords are trying to send you a message?'''
+
+shut_down = 'Shutting down'
+
+reason_user_quit = 'User quit\n'
+reason_unsupported_command = 'Unsupported command\n'
+reason_connection_error = 'Connection error\n'
 
 logfile = open('received.txt', 'a')
 new_session = '###!!!###\n' + ctime() + '\n' + strings.Info.START_UP
@@ -18,10 +32,10 @@ host = 'localhost'
 port = 1337
 
 started = False
-t = False
 
 def shutdown(reason):
-    print strings.Info.SHUT_DOWN
+    print shut_down
+    #logfile.write(ctime() + '\n' +  shut_down + ' REASON: ' + reason)
     logfile.write(ctime() + '\n' + strings.Info.SHUT_DOWN + reason)
     logfile.close()
     sys.exit()
@@ -35,21 +49,14 @@ def get_prefix(data):
         elif data.startswith(strings.Prefix.HELP):
             return strings.Prefix.HELP
         elif data.startswith(strings.Prefix.QUIT):
-            return strings.Prefix.QUIT
+            return strings.Prefix.HELP
         else:
             raise PrefixError(data)
     except PrefixError as e:
         print 'Data contains no known prefix\n', e.value
     return ''
 
-def parse_data(data):
-    # TODO: Need to figure out format of data and parse it here
-    # Return: type, data
-    return None
-
 def receive_stream(name, command):
-    global t
-    print t
     connection = socket.socket()
     try:
         connection.connect((host, port))
@@ -58,17 +65,13 @@ def receive_stream(name, command):
     connection.send(command)
     data = connection.recv(1024)
     while data:
-        prefix = get_prefix(data)
-        print 'prefix: ', prefix
-        if prefix == strings.Prefix.HAL:
+        if get_prefix(data) == strings.Prefix.HAL:
             logfile.write(ctime() + '\n' + data)
-            os.fsync(logfile)
-        elif prefix == strings.Prefix.QUIT:
-            print 'finished'
-            t = False
+        #elif get_prefix(data) == 'help':
+        #    print data[len(prefix_help):]
         data = connection.recv(1024)
 
-command = raw_input(strings.Info.WELCOME)
+command = raw_input(welcome)
 if command.lower() == 'n':
     print negative
     shutdown(strings.Reason.USER_QUIT)
@@ -89,15 +92,11 @@ else:
 
 while True:
     command = raw_input('Enter command: ')
-    if command.lower() == 'start' and started == False and t == False:
+    if command.lower() == 'start' and started == False:
         started = True
-        t = True
         thread.start_new_thread(receive_stream, ('transmission', command))
-    elif command.lower() == 'start' and started == True and t == True:
-        print 'Transmission already started', t, started
-    elif command.lower() == 'start' and t == False:
-        print 'resuming transmission'
-        thread.start_new_thread(receive_stream, ('transmission', command))
+    elif command.lower() == 'start' and started == True:
+        print 'Transmission already started'
     elif command.lower() == 'quit':
         print 'Closing conduit...'
         shutdown(strings.Reason.USER_QUIT)

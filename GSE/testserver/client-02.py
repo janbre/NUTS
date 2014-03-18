@@ -4,7 +4,6 @@ import sys
 from time import ctime
 from GSEexceptions import PrefixError
 import strings
-import os
 
 # TODO: logfile should just log errors and stuff
 #       beacon data should be logged to beacon.log
@@ -62,7 +61,6 @@ def receive_stream(name, command):
         print 'prefix: ', prefix
         if prefix == strings.Prefix.HAL:
             logfile.write(ctime() + '\n' + data)
-            os.fsync(logfile)
         elif prefix == strings.Prefix.QUIT:
             print 'finished'
             t = False

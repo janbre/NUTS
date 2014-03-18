@@ -5,6 +5,24 @@ import thread
 import sys
 import strings
 
+# different message prefixes
+prefix_HAL = 'HAL'
+prefix_welcome = 'welcome'
+prefix_help_text = 'help'
+prefix_quit = 'quit'
+
+# different messages
+message_HAL = '''ALL THESE WORLDS ARE YOURS EXCEPT EUROPA\nATTEMPT NO LANDING THERE\n'''
+
+message_welcome = 'This is your reptilian overlords, what can we help you with today?\n'
+
+message_help_request = 'Received request for help, transmitting hydrospanner manual'
+
+message_help_text = '''Available commands:\nQuit:\tShut down connection\nHelp:\tPrints this message\nStart:\tBegin transmission\n'''
+
+message_quit = 'Good day to you, madam/sir!\n'
+
+
 # Setting up the socket stuffs
 host = ''
 port = 1337
@@ -15,12 +33,10 @@ gse_socket.listen(5)
 inputs = [gse_socket]
 
 def constant_transmission(thread_name, connection):
-    #TODO: send X messages, then stop... see if new start-command works
-    for i in range(3):
+    while True:
         connection.send(strings.Prefix.HAL + (strings.Message.HAL * 6))
+        #connection.send(prefix_HAL + (message_HAL * 6))
         time.sleep(1)
-    connection.send(strings.Prefix.QUIT)
-    print 'sent quit'
 
 while True:
     rs, ws, es = select.select(inputs, [], [])
@@ -30,6 +46,7 @@ while True:
             print 'Got connection from ', address
             inputs.append(client)
             client.send(strings.Prefix.WELCOME + strings.Message.WELCOME)
+            #client.send(prefix_welcome + message_welcome)
         else:
             try:
                 data = r.recv(1024)
@@ -43,10 +60,13 @@ while True:
                 sys.exit()
             else:
                 if data[:4] == 'help':
+                    #print message_help_request
                     print strings.Message.HELP_TEXT
                     r.send(strings.Prefix.HELP + strings.Message.HELP_TEXT)
+                    #r.send(prefix_help_text + message_help_text)
                 elif data[:4] == 'quit':
                     print strings.Message.QUIT
+                    #print message_quit
                     gse_socket.close()
                     sys.exit()
                 elif data[:5] == 'start':
