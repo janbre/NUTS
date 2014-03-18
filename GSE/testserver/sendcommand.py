@@ -1,17 +1,20 @@
+import binascii
+import commands
 import messages
 import sys
 
 contact         = '0'
 get_telemetry   = '1'
 cam_take_pic    = '2'
-req_pic_status  = '3'
-req_pic         = '4'
+image_status    = '3'
+image_download  = '4'
+ping            = 'p'
 quit            = 'q'
 hilfe           = 'h'
 
 help_text = '0:\tContact\n1:\tGet telemetry\n2:\tTake picture\n3:\tRequest pic status\n4:\tRequest pic\nh:\thelp\nq:\tquit'
 
-buffer_no = 0
+buffer_no = 128
 
 def build_contact_command():
     # TODO
@@ -21,48 +24,57 @@ def build_contact_command():
 def build_telemetry_command():
     #TODO:
     print 'telemetry!'
-    return messages.request.GET_TELEMETRY
+    return messages.request.TELEMETRY
 
-def build_take_pic_command():
+def build_image_capture_command():
     #TODO:
     global buffer_no
-    print 'take pic! buffer no: ' + '{0:08b}'.format(buffer_no)
+    print 'take pic! buffer no: ' + '{0:08b}'.format(buffer_no) + ' Picture format: ' + messages.format.SMALL
     buffer_no += 1
-    return messages.request.CAM_TAKE_PIC
+    command = messages.request.IMAGE_CAPTURE + '{0:08b}'.format(buffer_no) + messages.format.SMALL
+    return command
 
-def build_req_pic_status_command():
+def build_image_status_command():
     #TODO:
     print 'request pic status!'
-    return messages.request.REQ_PIC_STATUS
+    return messages.request.IMAGE_STATUS
 
-def build_req_pic_command():
+def build_image_download_command():
     #TODO:
     print 'request pic!'
-    return messages.request.REQ_PIC
+    return messages.request.IMAGE_DOWNLOAD
 
+def build_ping_command():
+    #TODO:
+    print 'ping!'
+    return messages.request.PING
 
 while True:
+    #TODO: allow parameters to be sent with commands (e.g. buffer to retrieve, format to take picture in)
     command = raw_input('enter command: ')
     x = ''
-    if command == contact:
+    if command == commands.CONTACT:
         x = build_contact_command()
-    elif command == get_telemetry:
+    elif command == commands.TELEMETRY:
         x = build_telemetry_command()
-    elif command == cam_take_pic:
-        x = build_take_pic_command()
-    elif command == req_pic_status:
-        x = build_req_pic_status_command()
-    elif command == req_pic:
-        x = build_req_pic_command()
-    elif command == quit:
+    elif command == commands.IMAGE_CAPTURE:
+        x = build_image_capture_command()
+    elif command == commands.IMAGE_STATUS:
+        x = build_image_status_command()
+    elif command == commands.IMAGE_DOWNLOAD:
+        x = build_image_download_command()
+    elif command == commands.PING:
+        x = build_ping_command()
+    elif command == commands.QUIT:
         confirmed = raw_input('Are you sure you want to quit? y/n: ')
         if confirmed == 'y':
             sys.exit()
-    elif command == hilfe:
+    elif command == commands.HELP:
         print help_text
     else:
         print 'Unknown command. Type h for list of available commands'
     if x:
-        print x
+        print x, len(x)
+
 
 

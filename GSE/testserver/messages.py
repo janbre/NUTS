@@ -1,28 +1,36 @@
+'''
+All request/response types start with a leading 1 since Python likes
+to ignore leading 0's
+'''
 class request:
     '''
     Composed of the MSG ID & Request bits
     https://www.ntnu.no/wiki/display/nuts/Message+Format
     '''
-    CONTACT         = '00000110'
-    GET_TELEMETRY   = '00001010'
-    CAM_TAKE_PIC    = '00001110' # parameters: format (8 bits), buffer.no (8 bits)
-    REQ_PIC_STATUS  = '00010010' # parameters: buffer.no (8 bits)
-    REQ_PIC         = '00010110' # parameters: start chunk (10 bits), delta (6 bits), buffer.no (8 bits)
+    CONTACT         = '10000110'
+    TELEMETRY       = '10001010'
+    IMAGE_CAPTURE   = '10001110' # parameters: format (8 bits), buffer.no (8 bits)
+    IMAGE_STATUS    = '10010010' # parameters: buffer.no (8 bits)
+    IMAGE_DOWNLOAD  = '10010110' # parameters: start chunk (10 bits), delta (6 bits), buffer.no (8 bits)
+    PING            = '10011010' # parameters: 3 bytes data to be echoed
 
 class response:
     '''
     Composed of the MSG ID & Response bits
     https://www.ntnu.no/wiki/display/nuts/Message+Format
     '''
-    CONTACT         = '00000100'
-    GET_TELEMETRY   = '00001001'
-    CAM_TAKE_PIC    = '00001100'
-    REQ_PIC_STATUS  = '00010000' # taking pic (1 bit), ready for download (1 bit), size (22 bits)
-    REQ_PIC         = '00010101' # chunk.no (16 bits), buffer.no (8 bits) data = packet_size - header - CRC
+    CONTACT         = '10000100'
+    TELEMETRY       = '10001001'
+    IMAGE_CAPTURE   = '10001100'
+    IMAGE_STATUS    = '10010000' # taking pic (1 bit), ready for download (1 bit), size (22 bits)
+    IMAGE_DOWNLOAD  = '10010101' # chunk.no (16 bits), buffer.no (8 bits) data = packet_size - header - CRC
+    PING            = '10011001' # 3 bytes echoed data
 
 class format:
     '''
     Picture format requested
     '''
-    #TODO:
+    #TODO: enter REAL values here, not these bogus ones
+    SMALL           = '10000001'
+    LARGE           = '10000011'
 

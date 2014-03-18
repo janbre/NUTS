@@ -1,8 +1,8 @@
-class Command:
-    TAKE_PICTURE = ''
-    TRANSMIT_PICTURE = ''
-
-class Confirmation:
-    PICTURE_TAKEN = ''
-    HOUSEKEEPING_SENT = ''
-
+CONTACT         = '0'
+TELEMETRY       = '1'
+IMAGE_CAPTURE   = '2'
+IMAGE_STATUS    = '3'
+IMAGE_DOWNLOAD  = '4'
+PING            = 'p'
+QUIT            = 'q'
+HELP            = 'h'
