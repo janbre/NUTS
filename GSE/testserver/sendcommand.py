@@ -40,7 +40,7 @@ def build_image_capture_command():
     #TODO:
     global buffer_no
     header = messages.request.IMAGE_CAPTURE
-    payload = chr(buffer_no) + chr(int(messages.format.SMALL, 2))
+    payload = chr(buffer_no) + chr(int(messages.format.SMALL, 2)) + '\x00' # NULL byte to pad
     header_as_bytes = chr(int(header,2))
     payload_as_bits = bytes_to_bits(payload)
     print 'IMAGE CAPTURE command as bytes: ' + header_as_bytes + payload
@@ -51,12 +51,24 @@ def build_image_capture_command():
 
 def build_image_status_command():
     #TODO:
-    print 'request pic status!'
+    global buffer_no
+    header = messages.request.IMAGE_STATUS
+    payload = chr(buffer_no) + '\x00\x00'   # buffer.no as parameter, pad with NULL bytes
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'IMAGE STATUS message as bytes: ' + header_as_bytes + payload
+    print 'IMAGE STATUS message as bits: ' + header + payload_as_bits
     return messages.request.IMAGE_STATUS
 
 def build_image_download_command():
-    #TODO:
-    print 'request pic!'
+    #TODO: how to decide on start chunk and delta
+    global buffer_no
+    header = messages.request.IMAGE_DOWNLOAD
+    payload = chr(buffer_no) + '\x00\x00'   # buffer.no to download, NULL bytes as placeholder for start chunk and delta
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'IMAGE DOWNLOAD message as bytes: ' + header_as_bytes + payload
+    print 'IMAGE DOWNLOAD message as bits: ' + header + payload_as_bits
     return messages.request.IMAGE_DOWNLOAD
 
 def build_ping_command():
@@ -94,7 +106,7 @@ while True:
     else:
         print 'Unknown command. Type h for list of available commands'
     if x:
-        print x, len(x)
+        print x, len(x), 'buffer.no is: ' + str(buffer_no)
 
 
 
