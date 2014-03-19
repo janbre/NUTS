@@ -3,24 +3,48 @@ import commands
 import messages
 import sys
 
-help_text = '0:\tContact\n1:\tGet telemetry\n2:\tTake picture\n3:\tRequest pic status\n4:\tRequest pic\nh:\thelp\nq:\tquit'
+help_text = '0:\tContact\n1:\tGet telemetry\n2:\tTake picture\n3:\tRequest pic status\n4:\tRequest pic\n5:\tPing\nh:\thelp\nq:\tquit'
 
-buffer_no = 128 # since Python likes to ignore leading zeroes when working with binary
+buffer_no = 0 # since Python likes to ignore leading zeroes when working with binary
+
+def bytes_to_bits(data):
+    bits = ''
+    b = bytearray(data)
+    for byte in b:
+        bits += '{0:08b}'.format(byte)
+    return bits
+
 
 def build_contact_command():
     # TODO
-    print 'contact!'
+    header = messages.request.CONTACT
+    payload = messages.request.EMPTY_PAYLOAD
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'CONTACT message as bytes: ' + header_as_bytes + payload
+    print 'CONTACT message as bits: ' + header + payload_as_bits
     return messages.request.CONTACT
 
 def build_telemetry_command():
     #TODO:
+    header = messages.request.TELEMETRY
+    payload = messages.request.EMPTY_PAYLOAD
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'TELEMETRY message as bytes: ' + header_as_bytes + payload
+    print 'TELEMETRY message as bits: ' + header + payload_as_bits
     print 'telemetry!'
     return messages.request.TELEMETRY
 
 def build_image_capture_command():
     #TODO:
     global buffer_no
-    print 'take pic! buffer no: ' + '{0:08b}'.format(buffer_no) + ' Picture format: ' + messages.format.SMALL
+    header = messages.request.IMAGE_CAPTURE
+    payload = chr(buffer_no) + chr(int(messages.format.SMALL, 2))
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'IMAGE CAPTURE command as bytes: ' + header_as_bytes + payload
+    print 'IMAGE CAPTURE command as bits: ' + header + payload_as_bits
     buffer_no += 1
     command = messages.request.IMAGE_CAPTURE + '{0:08b}'.format(buffer_no) + messages.format.SMALL
     return command
@@ -37,7 +61,12 @@ def build_image_download_command():
 
 def build_ping_command():
     #TODO:
-    print 'ping!'
+    header = messages.request.PING
+    payload = messages.request.PING_PAYLOAD
+    header_as_bytes = chr(int(header,2))
+    payload_as_bits = bytes_to_bits(payload)
+    print 'PING message as bytes: ' + header_as_bytes + payload
+    print 'PING message as bits: ' + header + payload_as_bits
     return messages.request.PING
 
 while True:

@@ -9,10 +9,12 @@ class request:
     '''
     CONTACT         = '10000110'
     TELEMETRY       = '10001010'
-    IMAGE_CAPTURE   = '10001110' # parameters: format (8 bits), buffer.no (8 bits)
+    IMAGE_CAPTURE   = '10001110' # parameters: buffer.no (8 bits), format (8 bits)
     IMAGE_STATUS    = '10010010' # parameters: buffer.no (8 bits)
-    IMAGE_DOWNLOAD  = '10010110' # parameters: start chunk (10 bits), delta (6 bits), buffer.no (8 bits)
+    IMAGE_DOWNLOAD  = '10010110' # parameters: buffer.no (8 bits) start chunk (10 bits), delta (6 bits)
     PING            = '10011010' # parameters: 3 bytes data to be echoed
+    PING_PAYLOAD    = '42!'
+    EMPTY_PAYLOAD   = '\x00\x00\x00'
 
 class response:
     '''
@@ -23,7 +25,7 @@ class response:
     TELEMETRY       = '10001001'
     IMAGE_CAPTURE   = '10001100'
     IMAGE_STATUS    = '10010000' # taking pic (1 bit), ready for download (1 bit), size (22 bits)
-    IMAGE_DOWNLOAD  = '10010101' # chunk.no (16 bits), buffer.no (8 bits) data = packet_size - header - CRC
+    IMAGE_DOWNLOAD  = '10010101' # buffer.no (8 bits), chunk.no (16 bits), data = packet_size - header - CRC
     PING            = '10011001' # 3 bytes echoed data
 
 class format:
@@ -34,5 +36,3 @@ class format:
     SMALL           = '10000001'
     LARGE           = '10000011'
 
-class payload:
-    CONTACT_PAYLOAD = '000000
