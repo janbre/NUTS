@@ -34,3 +34,5 @@ class format:
     SMALL           = '10000001'
     LARGE           = '10000011'
 
+class payload:
+    CONTACT_PAYLOAD = '000000
