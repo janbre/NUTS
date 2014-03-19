@@ -13,6 +13,7 @@ gse_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 gse_socket.bind((host, port))
 gse_socket.listen(5)
 inputs = [gse_socket]
+packet = '100000011111111110101010'
 
 def constant_transmission(thread_name, connection):
     #TODO: send X messages, then stop... see if new start-command works
