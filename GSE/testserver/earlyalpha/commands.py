@@ -1,0 +1,8 @@
+CONTACT         = '0'
+TELEMETRY       = '1'
+IMAGE_CAPTURE   = '2'
+IMAGE_STATUS    = '3'
+IMAGE_DOWNLOAD  = '4'
+PING            = '5'
+QUIT            = 'q'
+HELP            = 'h'
