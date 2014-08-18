@@ -7,7 +7,7 @@ function confirmCommand(button) {
     myButton.type = "submit";
     myButton.value = "Confirm";
     myButton.disabled = false;
-    myButton.onclick = function () {sendCommand(button); };
+    myButton.onmousedown = function () {sendCommand(button); };
     if (!placeHolder.childNodes[3]) {
         placeHolder.appendChild(myButton);
     } else {
