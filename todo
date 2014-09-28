@@ -1,0 +1,8 @@
+GSE stuff:
+    get CSP working, not needed in the beginning until there is
+    something on the satellite side
+
+    instead, focus on using the data received
+        accept commands in a shell
+        store data received
+        present data received (stream to webapp)

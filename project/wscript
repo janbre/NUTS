@@ -270,6 +270,12 @@ def build(ctx):
                         includes = ctx.env.INCLUDES_CSP,
                         lib = libs,
                         use = 'csp')
+        ctx.program(source = ctx.path.ant_glob('examples/sendfile3.c'),
+                        target = 'sendfile3',
+                        includes = ctx.env.INCLUDES_CSP,
+                        lib = libs,
+                        use = 'csp')
+
 
         ctx.program(source = ctx.path.ant_glob('examples/split/client.c'),
                         target = 'split/client',

@@ -1,0 +1,168 @@
+'clean' finished successfully (0.028s)
+Setting top to                           : /home/alex/git/NUTS/project 
+Setting out to                           : /home/alex/git/NUTS/project/build 
+Checking for program gcc,cc              : gcc 
+Checking for program ar                  : ar 
+Checking for program size                : size 
+Checking for endianness                  : little 
+Checking for header stdbool.h            : yes 
+'configure' finished successfully (0.157s)
+Waf: Entering directory `/home/alex/git/NUTS/project/build'
+[ 1/64] c: src/arch/posix/csp_malloc.c -> build/src/arch/posix/csp_malloc.c.1.o
+[ 2/64] c: src/arch/posix/csp_queue.c -> build/src/arch/posix/csp_queue.c.1.o
+[ 3/64] c: src/arch/posix/csp_semaphore.c -> build/src/arch/posix/csp_semaphore.c.1.o
+[ 4/64] c: src/arch/posix/csp_system.c -> build/src/arch/posix/csp_system.c.1.o
+[ 5/64] c: src/arch/posix/csp_thread.c -> build/src/arch/posix/csp_thread.c.1.o
+[ 6/64] c: src/arch/posix/csp_time.c -> build/src/arch/posix/csp_time.c.1.o
+[ 7/64] c: src/arch/posix/pthread_queue.c -> build/src/arch/posix/pthread_queue.c.1.o
+[ 8/64] c: src/crypto/csp_hmac.c -> build/src/crypto/csp_hmac.c.1.o
+[ 9/64] c: src/crypto/csp_seqnr.c -> build/src/crypto/csp_seqnr.c.1.o
+[10/64] c: src/crypto/csp_sha1.c -> build/src/crypto/csp_sha1.c.1.o
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_verify’:
+../src/crypto/csp_seqnr.c:102:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Verifying sequence number: PACKET = 0x%02X, COUNTER = 0x%02X \r\n", sequence_number, csp_seqnr_get_rx(packet->id.src));
+     ^
+../src/crypto/csp_seqnr.c:102:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../src/crypto/csp_seqnr.c: In function ‘resync_thread’:
+../src/crypto/csp_seqnr.c:126:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Starting resynchronization\r\n");
+     ^
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_resync_respond’:
+../src/crypto/csp_seqnr.c:233:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Preparing to send RESYNC RESPONSE: %u %u\r\n", tx_sequence_number_to_send, rx_sequence_number_to_send);
+     ^
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_init’:
+../src/crypto/csp_seqnr.c:303:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Starting resync_listen_task\r\n");
+     ^
+[11/64] c: src/csp_buffer.c -> build/src/csp_buffer.c.1.o
+[12/64] c: src/csp_conn.c -> build/src/csp_conn.c.1.o
+[13/64] c: src/csp_crc32.c -> build/src/csp_crc32.c.1.o
+[14/64] c: src/csp_debug.c -> build/src/csp_debug.c.1.o
+[15/64] c: src/csp_endian.c -> build/src/csp_endian.c.1.o
+[16/64] c: src/csp_io.c -> build/src/csp_io.c.1.o
+[17/64] c: src/csp_port.c -> build/src/csp_port.c.1.o
+[18/64] c: src/csp_route.c -> build/src/csp_route.c.1.o
+../src/csp_io.c: In function ‘csp_send_direct’:
+../src/csp_io.c:256:3: warning: implicit declaration of function ‘csp_seqnr_append’ [-Wimplicit-function-declaration]
+   if(csp_seqnr_append(packet) != 0){
+   ^
+[19/64] c: src/csp_service_handler.c -> build/src/csp_service_handler.c.1.o
+../src/csp_route.c: In function ‘csp_route_security_check’:
+../src/csp_route.c:165:8: warning: implicit declaration of function ‘csp_seqnr_verify’ [-Wimplicit-function-declaration]
+        if(csp_seqnr_verify(packet) != 0){
+        ^
+[20/64] c: src/csp_services.c -> build/src/csp_services.c.1.o
+[21/64] c: src/drivers/usart/usart_linux.c -> build/src/drivers/usart/usart_linux.c.1.o
+[22/64] c: src/interfaces/csp_if_kiss.c -> build/src/interfaces/csp_if_kiss.c.1.o
+[23/64] c: src/interfaces/csp_if_lo.c -> build/src/interfaces/csp_if_lo.c.1.o
+[24/64] c: src/transport/csp_rdp.c -> build/src/transport/csp_rdp.c.1.o
+[25/64] c: src/transport/csp_udp.c -> build/src/transport/csp_udp.c.1.o
+[26/64] c: src/arch/posix/csp_malloc.c -> build/src/arch/posix/csp_malloc.c.2.o
+[27/64] c: src/arch/posix/csp_queue.c -> build/src/arch/posix/csp_queue.c.2.o
+[28/64] c: src/arch/posix/csp_semaphore.c -> build/src/arch/posix/csp_semaphore.c.2.o
+[29/64] c: src/arch/posix/csp_system.c -> build/src/arch/posix/csp_system.c.2.o
+[30/64] c: src/arch/posix/csp_thread.c -> build/src/arch/posix/csp_thread.c.2.o
+[31/64] c: src/arch/posix/csp_time.c -> build/src/arch/posix/csp_time.c.2.o
+[32/64] c: src/arch/posix/pthread_queue.c -> build/src/arch/posix/pthread_queue.c.2.o
+[33/64] c: src/crypto/csp_hmac.c -> build/src/crypto/csp_hmac.c.2.o
+[34/64] c: src/crypto/csp_seqnr.c -> build/src/crypto/csp_seqnr.c.2.o
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_verify’:
+../src/crypto/csp_seqnr.c:102:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Verifying sequence number: PACKET = 0x%02X, COUNTER = 0x%02X \r\n", sequence_number, csp_seqnr_get_rx(packet->id.src));
+     ^
+../src/crypto/csp_seqnr.c:102:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../src/crypto/csp_seqnr.c: In function ‘resync_thread’:
+../src/crypto/csp_seqnr.c:126:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Starting resynchronization\r\n");
+     ^
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_resync_respond’:
+../src/crypto/csp_seqnr.c:233:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Preparing to send RESYNC RESPONSE: %u %u\r\n", tx_sequence_number_to_send, rx_sequence_number_to_send);
+     ^
+../src/crypto/csp_seqnr.c: In function ‘csp_seqnr_init’:
+../src/crypto/csp_seqnr.c:303:5: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+     printf("Starting resync_listen_task\r\n");
+     ^
+[35/64] c: src/crypto/csp_sha1.c -> build/src/crypto/csp_sha1.c.2.o
+[36/64] c: src/csp_buffer.c -> build/src/csp_buffer.c.2.o
+[37/64] c: src/csp_conn.c -> build/src/csp_conn.c.2.o
+[38/64] c: src/csp_crc32.c -> build/src/csp_crc32.c.2.o
+[39/64] c: src/csp_debug.c -> build/src/csp_debug.c.2.o
+[40/64] c: src/csp_endian.c -> build/src/csp_endian.c.2.o
+[41/64] c: src/csp_io.c -> build/src/csp_io.c.2.o
+[42/64] c: src/csp_port.c -> build/src/csp_port.c.2.o
+[43/64] c: src/csp_route.c -> build/src/csp_route.c.2.o
+../src/csp_io.c: In function ‘csp_send_direct’:
+../src/csp_io.c:256:3: warning: implicit declaration of function ‘csp_seqnr_append’ [-Wimplicit-function-declaration]
+   if(csp_seqnr_append(packet) != 0){
+   ^
+[44/64] c: src/csp_service_handler.c -> build/src/csp_service_handler.c.2.o
+../src/csp_route.c: In function ‘csp_route_security_check’:
+../src/csp_route.c:165:8: warning: implicit declaration of function ‘csp_seqnr_verify’ [-Wimplicit-function-declaration]
+        if(csp_seqnr_verify(packet) != 0){
+        ^
+[45/64] c: src/csp_services.c -> build/src/csp_services.c.2.o
+[46/64] c: src/drivers/usart/usart_linux.c -> build/src/drivers/usart/usart_linux.c.2.o
+[47/64] c: src/interfaces/csp_if_kiss.c -> build/src/interfaces/csp_if_kiss.c.2.o
+[48/64] c: src/interfaces/csp_if_lo.c -> build/src/interfaces/csp_if_lo.c.2.o
+[49/64] c: src/transport/csp_rdp.c -> build/src/transport/csp_rdp.c.2.o
+[50/64] c: src/transport/csp_udp.c -> build/src/transport/csp_udp.c.2.o
+[51/64] c: examples/simple.c -> build/examples/simple.c.3.o
+[52/64] c: examples/split/server.c -> build/examples/split/server.c.4.o
+[53/64] c: examples/split/client.c -> build/examples/split/client.c.5.o
+../examples/split/server.c: In function ‘server’:
+../examples/split/server.c:45:7: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+       printf("Service request received (%s) \r\n");
+       ^
+../examples/split/server.c:51:2: warning: ‘return’ with no value, in function returning non-void [enabled by default]
+  return;
+  ^
+../examples/split/server.c: In function ‘main’:
+../examples/split/server.c:70:2: warning: implicit declaration of function ‘csp_seqnr_init’ [-Wimplicit-function-declaration]
+  csp_seqnr_init(0);
+  ^
+../examples/split/client.c: In function ‘send_hello_world_task’:
+../examples/split/client.c:27:6: warning: ‘return’ with no value, in function returning non-void [enabled by default]
+      return;
+      ^
+../examples/split/client.c: In function ‘main’:
+../examples/split/client.c:83:2: warning: implicit declaration of function ‘csp_seqnr_init’ [-Wimplicit-function-declaration]
+  csp_seqnr_init(0);
+  ^
+[54/64] c: examples/csptest.c -> build/examples/csptest.c.6.o
+[55/64] c: examples/largefile.c -> build/examples/largefile.c.7.o
+[56/64] c: examples/kiss.c -> build/examples/kiss.c.8.o
+[57/64] cstlib: build/src/arch/posix/csp_malloc.c.1.o build/src/arch/posix/csp_queue.c.1.o build/src/arch/posix/csp_semaphore.c.1.o build/src/arch/posix/csp_system.c.1.o build/src/arch/posix/csp_thread.c.1.o build/src/arch/posix/csp_time.c.1.o build/src/arch/posix/pthread_queue.c.1.o build/src/crypto/csp_hmac.c.1.o build/src/crypto/csp_seqnr.c.1.o build/src/crypto/csp_sha1.c.1.o build/src/csp_buffer.c.1.o build/src/csp_conn.c.1.o build/src/csp_crc32.c.1.o build/src/csp_debug.c.1.o build/src/csp_endian.c.1.o build/src/csp_io.c.1.o build/src/csp_port.c.1.o build/src/csp_route.c.1.o build/src/csp_service_handler.c.1.o build/src/csp_services.c.1.o build/src/drivers/usart/usart_linux.c.1.o build/src/interfaces/csp_if_kiss.c.1.o build/src/interfaces/csp_if_lo.c.1.o build/src/transport/csp_rdp.c.1.o build/src/transport/csp_udp.c.1.o -> build/libcsp.a
+[58/64] cprogram: build/examples/largefile.c.7.o -> build/largefile
+[59/64] cprogram: build/examples/split/client.c.5.o -> build/split/client
+[60/64] cprogram: build/examples/simple.c.3.o -> build/simple
+[61/64] cprogram: build/examples/csptest.c.6.o -> build/csptest
+[62/64] cprogram: build/examples/split/server.c.4.o -> build/split/server
+[63/64] cprogram: build/examples/kiss.c.8.o -> build/kiss
+[64/64] cshlib: build/src/arch/posix/csp_malloc.c.2.o build/src/arch/posix/csp_queue.c.2.o build/src/arch/posix/csp_semaphore.c.2.o build/src/arch/posix/csp_system.c.2.o build/src/arch/posix/csp_thread.c.2.o build/src/arch/posix/csp_time.c.2.o build/src/arch/posix/pthread_queue.c.2.o build/src/crypto/csp_hmac.c.2.o build/src/crypto/csp_seqnr.c.2.o build/src/crypto/csp_sha1.c.2.o build/src/csp_buffer.c.2.o build/src/csp_conn.c.2.o build/src/csp_crc32.c.2.o build/src/csp_debug.c.2.o build/src/csp_endian.c.2.o build/src/csp_io.c.2.o build/src/csp_port.c.2.o build/src/csp_route.c.2.o build/src/csp_service_handler.c.2.o build/src/csp_services.c.2.o build/src/drivers/usart/usart_linux.c.2.o build/src/interfaces/csp_if_kiss.c.2.o build/src/interfaces/csp_if_lo.c.2.o build/src/transport/csp_rdp.c.2.o build/src/transport/csp_udp.c.2.o -> build/libpycsp.so
+Waf: Leaving directory `/home/alex/git/NUTS/project/build'
+'build' finished successfully (2.558s)
+Waf: Entering directory `/home/alex/git/NUTS/project/build'
+- install /home/alex/opt/csp/include/csp/csp.h (from include/csp/csp.h)
+- install /home/alex/opt/csp/include/csp/csp_buffer.h (from include/csp/csp_buffer.h)
+- install /home/alex/opt/csp/include/csp/interfaces/csp_if_lo.h (from include/csp/interfaces/csp_if_lo.h)
+- install /home/alex/opt/csp/include/csp/csp_cmp.h (from include/csp/csp_cmp.h)
+- install /home/alex/opt/csp/include/csp/csp_debug.h (from include/csp/csp_debug.h)
+- install /home/alex/opt/csp/include/csp/interfaces/csp_if_kiss.h (from include/csp/interfaces/csp_if_kiss.h)
+- install /home/alex/opt/csp/include/csp/csp_endian.h (from include/csp/csp_endian.h)
+- install /home/alex/opt/csp/include/csp/drivers/usart.h (from include/csp/drivers/usart.h)
+- install /home/alex/opt/csp/include/csp/csp_error.h (from include/csp/csp_error.h)
++ install /home/alex/opt/csp/include/csp/csp_autoconfig.h (from build/include/csp/csp_autoconfig.h)
+- install /home/alex/opt/csp/include/csp/csp_interface.h (from include/csp/csp_interface.h)
+- install /home/alex/opt/csp/include/csp/csp_platform.h (from include/csp/csp_platform.h)
++ install /home/alex/opt/csp/lib/libcsp.a (from build/libcsp.a)
++ install /home/alex/opt/csp/bin/simple (from build/simple)
++ install /home/alex/opt/csp/bin/server (from build/split/server)
++ install /home/alex/opt/csp/lib/libpycsp.so (from build/libpycsp.so)
++ install /home/alex/opt/csp/bin/client (from build/split/client)
++ install /home/alex/opt/csp/bin/csptest (from build/csptest)
++ install /home/alex/opt/csp/bin/largefile (from build/largefile)
++ install /home/alex/opt/csp/bin/kiss (from build/kiss)
+Waf: Leaving directory `/home/alex/git/NUTS/project/build'
+'install' finished successfully (0.054s)

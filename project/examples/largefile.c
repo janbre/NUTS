@@ -38,6 +38,7 @@ CSP_DEFINE_TASK(task_server) {
                 case MY_PORT:
                     /* Process packet here */
                     printf("Packet received on MY_PORT: %s\r\n", (char *) packet->data);
+                    printf("Length of packet:%d \n", packet->length);
                     csp_buffer_free(packet);
             default:
                     /* Let the service handler reply pings, buffer use
@@ -62,7 +63,7 @@ CSP_DEFINE_TASK(task_client) {
     csp_conn_t * conn;
 
     FILE *fp;
-    fp = fopen("/home/alex/Git/NUTS/project/examples/largefile.txt", "r");
+    fp = fopen("/home/alex/git/NUTS/project/examples/largefile.txt", "r");
     if(!fp) {
         fprintf(stderr, "Could not open file\n");
         exit(EXIT_FAILURE);
@@ -108,8 +109,8 @@ CSP_DEFINE_TASK(task_client) {
         }
 
         //fgets(buff, 55, (FILE*)fp);
-        int bytes_read = fread(buff, sizeof(unsigned char), 255, (FILE*)fp);
-        printf("Bytes read %d", bytes_read);
+        int bytes_read = fread(buff, sizeof(unsigned char), 55, (FILE*)fp);
+        printf("Bytes read %d\n", bytes_read);
         /* Copy dummy data to packet */
         msg = "TThree rings for the Elven kings under the sky\nSeven for the Dwarf Lords in their halls of stone\nNine for mortal men doomed to die\nOne for the Dark Lord on his dark throne in the land of Mordor where the shadows lie\nOne ring to rule them all\nOne ring to find them\nOne ring to bring them all, and in the darkness bind them\nIn the land of Mordor where the shadows lie\nThree rings for the Elven kings under the sky\nSeven for the Dwarf Lords in their halls of stone\nNine for mortal men doomed to die\nOne for the Dark Lord on his dark throne in the land of Mordor where the shadows lie\nOne ring to rule them all\nOne ring to find them\nOne ring to bring them all, and in the darkness bind them\nIn the land of Mordor where the shadows lie.";
         msg = buff;

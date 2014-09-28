@@ -183,7 +183,7 @@ class csp_l4data_t (ctypes.Structure):
     pass
 
 # Load library
-libcsp = ctypes.CDLL("../../build/libpycsp.so", use_errno=True)
+libcsp = ctypes.CDLL("/home/alex/opt/csp/lib/libpycsp.so", use_errno=True)
 
 my_address = libcsp.my_address
 
