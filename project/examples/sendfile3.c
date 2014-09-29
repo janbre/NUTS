@@ -25,8 +25,8 @@ CSP_DEFINE_TASK(task_server) {
     csp_conn_t *conn;
     csp_packet_t *packet;
 	FILE *fr;
-	//fr = fopen("/home/alex/fjfjfj.pdf", "wb");
-	fr = fopen("/home/alex/appflow.jpg", "wb");
+	fr = fopen("/home/alex/fjfjfj.pdf", "wb");
+	//fr = fopen("/home/alex/appflow.jpg", "wb");
 	//fr = fopen("/home/alex/fjfjfj.txt", "w");
 	char *data;
 	char data_string[255];
@@ -77,8 +77,8 @@ CSP_DEFINE_TASK(task_client) {
     csp_conn_t * conn;
 
     FILE *fp;
-	fp = fopen("/home/alex/Pictures/appflow.jpg", "rb");
-	//fp = fopen("/home/alex/Documents/IT.pdf", "rb");
+	//fp = fopen("/home/alex/Pictures/appflow.jpg", "rb");
+	fp = fopen("/home/alex/Documents/IT.pdf", "rb");
 	//fp = fopen("/home/alex/cinnamon.css", "r");
     if(!fp) {
         fprintf(stderr, "Could not open file\n");
@@ -89,7 +89,7 @@ CSP_DEFINE_TASK(task_client) {
     int numr;
 
     while(feof(fp)==0) {
-	    if((numr = fread(buff,1,255,fp)) != 255) {
+	    if((numr = fread(buff,1,255,fp)) == 0) {
 	        printf("Failed to read data!");
 	    } else {
             csp_sleep_ms(100);
@@ -128,7 +128,7 @@ CSP_DEFINE_TASK(task_client) {
 		        array[i] = 'h';
 		    }*/
 		    
-		    strcpy((char *) packet->data, buff);
+		    memcpy((char *) packet->data, buff, 255);
 		    
 		  /*  for (int i = 0; i < 255; i++) {
 		        packet->data[i] = buff[i];
