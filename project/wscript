@@ -292,6 +292,12 @@ def build(ctx):
                         includes = ctx.env.INCLUDES_CSP,
                         lib = libs,
                         use = 'csp')
+        ctx.program(source = ctx.path.ant_glob('examples/sendreceive.c'),
+                        target = 'sendreceive',
+                        includes = ctx.env.INCLUDES_CSP,
+                        lib = libs,
+                        use = 'csp')
+
 
         if ctx.options.enable_if_kiss:
             ctx.program(source = 'examples/kiss.c',

@@ -13,3 +13,4 @@
 *.gz
 *.o
 .conf_check*
+.waf/*

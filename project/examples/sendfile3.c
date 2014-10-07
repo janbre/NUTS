@@ -54,7 +54,7 @@ CSP_DEFINE_TASK(task_server) {
 					fwrite(data,1,packet->length,fr);
 					//fprintf(fr, data_string);
                     csp_buffer_free(packet);
-            default:
+            	default:
                     /* Let the service handler reply pings, buffer use
                      * etc */
                     csp_service_handler(conn, packet);
