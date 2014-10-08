@@ -84,7 +84,7 @@ CSP_DEFINE_TASK(task_client) {
 	return CSP_TASK_RETURN;
 }
 
-int sendpacket() {
+int sendpacket(char *msg) {
 	printf("Initialising CSP\r\n");
 	csp_buffer_init(10, 300);
 	csp_init(MY_ADDRESS);
@@ -109,7 +109,7 @@ int sendpacket() {
 		return CSP_TASK_RETURN;
 	}
 	csp_sleep_ms(1000);
-	char *msg = "42!";
+	//char *msg = "42!";
 	strcpy((char *) packet->data, msg);
 	packet->length = strlen(msg);
 	if (!csp_send(conn, packet, 1000)) {
@@ -119,10 +119,11 @@ int sendpacket() {
 		printf("Sending packet from sendpacket() succeeded\n");
 	}
 	csp_close(conn);
-	while(1) {
+	/*while(1) {
 		csp_sleep_ms(3000);
-	}
-	return;
+	}*/
+	csp_sleep_ms(3000);
+	return 54;
 }
 int start(void);
 //int main(int argc, char * argv[]) {
@@ -170,7 +171,7 @@ int start() {
 
 		csp_close(conn);
 	}*/
-	sendpacket();
+	sendpacket("42");
 	while(1){
 		csp_sleep_ms(100000);
 	}
