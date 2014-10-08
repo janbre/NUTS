@@ -6,6 +6,7 @@
 
 #include <../src/arch/csp_thread.h>
 
+#include "testlib.h"
 #define MY_ADDRESS 1
 #define MY_PORT 10
 
@@ -83,12 +84,36 @@ CSP_DEFINE_TASK(task_client) {
 	return CSP_TASK_RETURN;
 }
 
+int sendpacket() {
+	csp_packet_t *packet;
+	csp_conn_t *conn;
+	packet = csp_buffer_get(10);
+	if (packet == NULL) {
+		printf("failed to get packet in sendpacket()\n");
+		return CSP_TASK_RETURN;
+	}
+	conn = csp_connect(CSP_PRIO_NORM, MY_ADDRESS, MY_PORT, 1000, CSP_O_NONE);
+	if (conn == NULL) {
+		printf("Connection failed in sendpacket()\n");
+		return CSP_TASK_RETURN;
+	}
+	char *msg = "42!";
+	strcpy((char *) packet->data, msg);
+	packet->length = strlen(msg);
+	if (!csp_send(conn, packet, 1000)) {
+		printf("Sending packet from sendpacket() failed\n");
+		csp_buffer_free(packet);
+	}
+	csp_close(conn);
+	return;
+}
+
 int main(int argc, char * argv[]) {
 	printf("Initialising CSP\r\n");
 	csp_buffer_init(10, 300);
 	csp_init(MY_ADDRESS);
 	csp_route_start_task(500, 1);
-	printf(arg[1]);
+	printf(argv[1]);
 
 	printf("Starting server task\r\n");
 	csp_thread_handle_t handle_server;
@@ -98,7 +123,7 @@ int main(int argc, char * argv[]) {
 //	csp_thread_handle_t handle_client;
 //	csp_thread_create(task_client, (signed char *) "CLIENT", 1000, NULL, 0, &handle_client);
 
-	while(1) {
+/*	while(1) {
 		csp_sleep_ms(1000);
 		csp_packet_t *packet;
 		csp_conn_t *conn;
@@ -127,6 +152,10 @@ int main(int argc, char * argv[]) {
 		}
 
 		csp_close(conn);
+	}*/
+	sendpacket();
+	while(1){
+		csp_sleep_ms(100000);
 	}
 	return 0;
 }

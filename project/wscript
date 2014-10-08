@@ -257,6 +257,12 @@ def build(ctx):
             includes= ctx.env.INCLUDES_CSP,
             export_includes = 'include',
             lib=libs)
+        ctx.shlib(source=ctx.path.ant_glob(ctx.env.FILES_CSP),
+            target = 'test',
+            includes = ctx.env.INCLUDES_CSP,
+            export_includes = 'include',
+            lib = libs)
+
 
     if ctx.env.ENABLE_EXAMPLES:
         ctx.program(source = ctx.path.ant_glob('examples/simple.c'),
@@ -292,8 +298,8 @@ def build(ctx):
                         includes = ctx.env.INCLUDES_CSP,
                         lib = libs,
                         use = 'csp')
-        ctx.program(source = ctx.path.ant_glob('examples/sendreceive.c'),
-                        target = 'sendreceive',
+        ctx.program(source = ctx.path.ant_glob('examples/test.c'),
+                        target = 'test',
                         includes = ctx.env.INCLUDES_CSP,
                         lib = libs,
                         use = 'csp')
