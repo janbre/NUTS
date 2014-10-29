@@ -20,11 +20,14 @@ CSP_DEFINE_TASK(task_server) {
 
 	csp_conn_t *conn;
 	csp_packet_t *packet;
+	bool open = true;
+	int timeout = 10000;
 
 	char *data;
-	while (1) {
-		if ((conn = csp_accept(sock, 10000)) == NULL) {
-			printf("no connection\n");
+	while (open) {
+		if ((conn = csp_accept(sock, timeout)) == NULL) {
+			//printf("No connection for %d. Connection closed", timeout);
+			//printf("no connection\n");
 			continue;
 		}
 
@@ -38,6 +41,10 @@ CSP_DEFINE_TASK(task_server) {
 					csp_service_handler(conn, packet);
 					break;
 			}
+			if (strcmp(data, "q") == 0) {
+				open = false;
+				printf("closing connection\n");
+			}
 		}
 
 		csp_close(conn);
@@ -45,46 +52,7 @@ CSP_DEFINE_TASK(task_server) {
 	return CSP_TASK_RETURN;
 }
 
-CSP_DEFINE_TASK(task_client) {
-	csp_packet_t *packet;
-	csp_conn_t *conn;
-
-
-	while(1) {
-		csp_sleep_ms(1000);
-		int result = csp_ping(MY_ADDRESS, 100, 100, CSP_O_NONE);
-		printf("Ping result %d [ms]\r\n", result);
-		csp_sleep_ms(1000);
-
-		packet = csp_buffer_get(10);
-		if (packet == NULL) {
-			printf("Failed to get buffer element\n");
-			return CSP_TASK_RETURN;
-		}
-
-		conn = csp_connect(CSP_PRIO_NORM, MY_ADDRESS, MY_PORT, 1000, CSP_O_NONE);
-		if(conn == NULL) {
-			printf("Connection failed\n");
-			csp_buffer_free(packet);
-			return CSP_TASK_RETURN;
-		}
-
-		char *msg = "Hello world";
-		strcpy((char *) packet->data, msg);
-
-		packet->length = strlen(msg);
-
-		if (!csp_send(conn, packet, 1000)) {
-			printf("Send failed\n");
-			csp_buffer_free(packet);
-		}
-
-		csp_close(conn);
-	}
-	return CSP_TASK_RETURN;
-}
-
-int sendpacket(char *msg) {
+void sendpacket(char *msg) {
 	printf("Initialising CSP\r\n");
 	csp_buffer_init(10, 300);
 	csp_init(MY_ADDRESS);
@@ -93,8 +61,6 @@ int sendpacket(char *msg) {
 	printf("Starting server task\r\n");
 	csp_thread_handle_t handle_server;
 	csp_thread_create(task_server, (signed char *) "SERVER", 1000, NULL, 0, &handle_server);
-
-	printf("Starting client task\r\n");
 
 	csp_packet_t *packet;
 	csp_conn_t *conn;
@@ -108,7 +74,7 @@ int sendpacket(char *msg) {
 		printf("Connection failed in sendpacket()\n");
 		return CSP_TASK_RETURN;
 	}
-	csp_sleep_ms(1000);
+//	csp_sleep_ms(1000);
 	//char *msg = "42!";
 	strcpy((char *) packet->data, msg);
 	packet->length = strlen(msg);
@@ -122,58 +88,6 @@ int sendpacket(char *msg) {
 	/*while(1) {
 		csp_sleep_ms(3000);
 	}*/
-	csp_sleep_ms(3000);
-	return 54;
-}
-int start(void);
-//int main(int argc, char * argv[]) {
-int start() {
-	printf("Initialising CSP\r\n");
-	csp_buffer_init(10, 300);
-	csp_init(MY_ADDRESS);
-	csp_route_start_task(500, 1);
-
-	printf("Starting server task\r\n");
-	csp_thread_handle_t handle_server;
-	csp_thread_create(task_server, (signed char *) "SERVER", 1000, NULL, 0, &handle_server);
-
-	printf("Starting client task\r\n");
-//	csp_thread_handle_t handle_client;
-//	csp_thread_create(task_client, (signed char *) "CLIENT", 1000, NULL, 0, &handle_client);
-
-/*	while(1) {
-		csp_sleep_ms(1000);
-		csp_packet_t *packet;
-		csp_conn_t *conn;
-		packet = csp_buffer_get(10);
-		if (packet == NULL) {
-			printf("Failed to get buffer element\n");
-			return CSP_TASK_RETURN;
-		}
-
-		conn = csp_connect(CSP_PRIO_NORM, MY_ADDRESS, MY_PORT, 1000, CSP_O_NONE);
-		if(conn == NULL) {
-			printf("Connection failed\n");
-			csp_buffer_free(packet);
-			return CSP_TASK_RETURN;
-		}
-
-		char *msg = "Hello world";
-		msg = argc;
-		strcpy((char *) packet->data, msg);
-
-		packet->length = strlen(msg);
-
-		if (!csp_send(conn, packet, 1000)) {
-			printf("Send failed\n");
-			csp_buffer_free(packet);
-		}
-
-		csp_close(conn);
-	}*/
-	sendpacket("42");
-	while(1){
-		csp_sleep_ms(100000);
-	}
-	return 0;
+	//csp_sleep_ms(30);
+	return;
 }

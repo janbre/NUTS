@@ -1,1 +1,1 @@
-int sendpacket(char *msg);
+void sendpacket(char *msg);
