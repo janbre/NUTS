@@ -1,8 +1,6 @@
 '''
-All request/response types start with a leading 1 since Python likes
-to ignore leading 0's
-But that's just because I didn't know what I was doing at the time... so
-leading 0's are no problem
+All request/response types start with a leading 1 since I didn't know what I was doing at the time... 
+leading 0's shouldn't be a problem
 '''
 class request:
     '''
